@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03A15016-533B-4C7D-94DC-CF216B786209}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YongShuiGuanLiDBI</RootNamespace>
+    <AssemblyName>YongShuiGuanLiDBI</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ciloci.Flee, Version=0.9.26.0, Culture=neutral, PublicKeyToken=c8526a021ef298ed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\GlobalAssembly\Flee\Ciloci.Flee.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\GlobalAssembly\NLog\.NET Framework 2.0\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xdgk.Common, Version=0.8.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\GlobalAssembly\Xdgk.Common\Xdgk.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChannelClass.cs" />
+    <Compile Include="ChannelCollection.cs" />
+    <Compile Include="ChannelDBI.cs" />
+    <Compile Include="ChannelFactory.cs" />
+    <Compile Include="ChannelStationMapDBI.cs" />
+    <Compile Include="ConfigDBI.cs" />
+    <Compile Include="DataTableConverter.cs" />
+    <Compile Include="DataTableHelper.cs" />
+    <Compile Include="DateTimePointOfFallCalculator.cs" />
+    <Compile Include="DBNames.cs" />
+    <Compile Include="DataEnum.cs" />
+    <Compile Include="DBNamesComplex.cs" />
+    <Compile Include="DebugDBI.cs" />
+    <Compile Include="DevcieDBI.cs" />
+    <Compile Include="DeviceAlarm.cs" />
+    <Compile Include="DeviceFactory.cs" />
+    <Compile Include="DistributeClass.cs" />
+    <Compile Include="DitchData10MinuteChangeLogDBI.cs" />
+    <Compile Include="DitchData2HourDBI.cs" />
+    <Compile Include="DitchDataDayDBI.cs" />
+    <Compile Include="DitchDataDBI.cs" />
+    <Compile Include="DitchDataLast.cs" />
+    <Compile Include="DitchDataReal.cs" />
+    <Compile Include="DitchDataSDDBI.cs" />
+    <Compile Include="DitchDataYearDBI.cs" />
+    <Compile Include="DuringDBI.cs" />
+    <Compile Include="FeeDBI.cs" />
+    <Compile Include="Formula.cs" />
+    <Compile Include="FormulaDBI.cs" />
+    <Compile Include="gcgl_data.cs" />
+    <Compile Include="login_data.cs" />
+    <Compile Include="MapDBI.cs" />
+    <Compile Include="NeedWaterDBI.cs" />
+    <Compile Include="RainDBI.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="SluiceDataDBI.cs" />
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="SqlRowColumnConverter.cs" />
+    <Compile Include="StageAmount.cs" />
+    <Compile Include="StationDeviceDBI.cs" />
+    <Compile Include="DBI.cs" />
+    <Compile Include="DeviceClass.cs" />
+    <Compile Include="DeviceCollection.cs" />
+    <Compile Include="MenuDBI.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Station.cs" />
+    <Compile Include="StationCollection.cs" />
+    <Compile Include="StationDBI.cs" />
+    <Compile Include="StationFactory.cs" />
+    <Compile Include="station_data.cs" />
+    <Compile Include="UserClass.cs" />
+    <Compile Include="UserDBI.cs" />
+    <Compile Include="WaterUser.cs" />
+    <Compile Include="WaterUserChannelMapDBI.cs" />
+    <Compile Include="WaterUserCollection.cs" />
+    <Compile Include="WaterUserDBI.cs" />
+    <Compile Include="WaterUserFactory.cs" />
+    <Compile Include="WaterUserInDBI.cs" />
+    <Compile Include="WaterUserLevel.cs" />
+    <Compile Include="WaterUserLevelCollection.cs" />
+    <Compile Include="WaterUserLevelDBI.cs" />
+    <Compile Include="WaterUserLevelFactory.cs" />
+    <Compile Include="WaterUserOutDBI.cs" />
+    <Compile Include="WaterUserSession.cs" />
+    <Compile Include="WaterUserType.cs" />
+    <Compile Include="WaterUserTypeCollection.cs" />
+    <Compile Include="WaterUserTypeDBI.cs" />
+    <Compile Include="WaterUserTypeFactory.cs" />
+    <Compile Include="_temp.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

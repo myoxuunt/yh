@@ -1,0 +1,1373 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E375CFD-50AD-4D84-BD64-9A9D18F26442}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YongShuiGuanLiV2</RootNamespace>
+    <AssemblyName>YongShuiGuanLiV2</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="am.Charts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b938ced8cfc9b4f3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\GlobalAssembly\amchart\am.Charts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.UI.WebControls, Version=1.0.2.226, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC\Microsoft.Web.UI.WebControls\1.0.2.226__31bf3856ad364e35\Microsoft.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\GlobalAssembly\NLog\.NET Framework 2.0\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenFlashChart, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\GlobalAssembly\OpenFlashChart2\OpenFlashChart.dll</HintPath>
+    </Reference>
+    <Reference Include="PNayak.Web.UI.WebControls.ExportButton, Version=1.1.0.0, Culture=neutral" />
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Xdgk.CF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\GlobalAssembly\Xdgk.CF\Xdgk.CF.dll</HintPath>
+    </Reference>
+    <Reference Include="Xdgk.Common, Version=0.8.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\GlobalAssembly\Xdgk.Common\Xdgk.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.1.5.28844, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\GlobalAssembly\zedgraph_dll_v5.1.5\ZedGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph.Web, Version=5.1.5.29221, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\GlobalAssembly\zedgraph_dll_v5.1.5\ZedGraph.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="login.aspx" />
+    <Content Include="pReal.aspx" />
+    <Content Include="Station.aspx" />
+    <Content Include="UC\UCChartWrap.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="base_info\gcsj.aspx.cs">
+      <DependentUpon>gcsj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="base_info\gcsj.aspx.designer.cs">
+      <DependentUpon>gcsj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="base_info\gcsjtj.aspx.cs">
+      <DependentUpon>gcsjtj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="base_info\gcsjtj.aspx.designer.cs">
+      <DependentUpon>gcsjtj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="base_info\gcsj_new.aspx.cs">
+      <DependentUpon>gcsj_new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="base_info\gcsj_new.aspx.designer.cs">
+      <DependentUpon>gcsj_new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="base_info\glqk.aspx.cs">
+      <DependentUpon>glqk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="base_info\glqk.aspx.designer.cs">
+      <DependentUpon>glqk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="base_info\glqktj.aspx.cs">
+      <DependentUpon>glqktj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="base_info\glqktj.aspx.designer.cs">
+      <DependentUpon>glqktj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="base_info\glqk_new.aspx.cs">
+      <DependentUpon>glqk_new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="base_info\glqk_new.aspx.designer.cs">
+      <DependentUpon>glqk_new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="base_info\jytz.aspx.cs">
+      <DependentUpon>jytz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="base_info\jytz.aspx.designer.cs">
+      <DependentUpon>jytz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="base_info\jytztj.aspx.cs">
+      <DependentUpon>jytztj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="base_info\jytztj.aspx.designer.cs">
+      <DependentUpon>jytztj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="base_info\jytz_new.aspx.cs">
+      <DependentUpon>jytz_new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="base_info\jytz_new.aspx.designer.cs">
+      <DependentUpon>jytz_new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChartData\ChartCommonData.aspx.cs">
+      <DependentUpon>ChartCommonData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChartData\ChartCommonData.aspx.designer.cs">
+      <DependentUpon>ChartCommonData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChartData\ChartData1.aspx.cs">
+      <DependentUpon>ChartData1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChartData\ChartData1.aspx.designer.cs">
+      <DependentUpon>ChartData1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChartData\ChartData2.aspx.cs">
+      <DependentUpon>ChartData2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChartData\ChartData2.aspx.designer.cs">
+      <DependentUpon>ChartData2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChartData\RealData.aspx.cs">
+      <DependentUpon>RealData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChartData\RealData.aspx.designer.cs">
+      <DependentUpon>RealData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChartData\UCChartData1.aspx.cs">
+      <DependentUpon>UCChartData1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChartData\UCChartData1.aspx.designer.cs">
+      <DependentUpon>UCChartData1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\CSVExporter.cs" />
+    <Compile Include="Code\ChannelSession.cs" />
+    <Compile Include="Code\ChannelStationDTCondition.cs" />
+    <Compile Include="Code\ChartConfig.cs" />
+    <Compile Include="Code\ChartHelper.cs" />
+    <Compile Include="Code\ChartSession.cs" />
+    <Compile Include="Code\ChartStrings.cs" />
+    <Compile Include="Code\Enum.cs" />
+    <Compile Include="Code\ExcelExporter.cs" />
+    <Compile Include="Code\FormatStringManager.cs" />
+    <Compile Include="Code\GraphPaneConfigFactory.cs" />
+    <Compile Include="Code\GridViewColumnFormatString.cs" />
+    <Compile Include="Code\GridViewConfigFactory.cs" />
+    <Compile Include="Code\JavaScriptHelper.cs" />
+    <Compile Include="Code\MasterPageHelper.cs" />
+    <Compile Include="Code\PanelHelper.cs" />
+    <Compile Include="Code\QueryStringParamPicker.cs" />
+    <Compile Include="Code\LoginChecker.cs" />
+    <Compile Include="Code\ExternalSWFBinder.cs" />
+    <Compile Include="Code\ColorProvider.cs" />
+    <Compile Include="Code\LineHelper.cs" />
+    <Compile Include="Code\LoginSession.cs" />
+    <Compile Include="Code\NameIDPair.cs" />
+    <Compile Include="Code\OrganizationDataBinder.cs" />
+    <Compile Include="Code\SQLDateTimeValidator.cs" />
+    <Compile Include="Code\TClass.cs" />
+    <Compile Include="Code\Utility.cs" />
+    <Compile Include="Code\WindowsHelper.cs" />
+    <Compile Include="Code\DataTableHelper.cs" />
+    <Compile Include="debug\pdebug.aspx.cs">
+      <DependentUpon>pdebug.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="debug\pdebug.aspx.designer.cs">
+      <DependentUpon>pdebug.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\bzxx.aspx.cs">
+      <DependentUpon>bzxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\bzxx.aspx.designer.cs">
+      <DependentUpon>bzxx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\csdxx.aspx.cs">
+      <DependentUpon>csdxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\csdxx.aspx.designer.cs">
+      <DependentUpon>csdxx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\dbxx.aspx.cs">
+      <DependentUpon>dbxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\dbxx.aspx.designer.cs">
+      <DependentUpon>dbxx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\dcxx.aspx.cs">
+      <DependentUpon>dcxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\dcxx.aspx.designer.cs">
+      <DependentUpon>dcxx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\dhxxx.aspx.cs">
+      <DependentUpon>dhxxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\dhxxx.aspx.designer.cs">
+      <DependentUpon>dhxxx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\dpxx.aspx.cs">
+      <DependentUpon>dpxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\dpxx.aspx.designer.cs">
+      <DependentUpon>dpxx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\dsxx.aspx.cs">
+      <DependentUpon>dsxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\dsxx.aspx.designer.cs">
+      <DependentUpon>dsxx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\gcjcxx_query.aspx.cs">
+      <DependentUpon>gcjcxx_query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\gcjcxx_query.aspx.designer.cs">
+      <DependentUpon>gcjcxx_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\ggqd_query.aspx.cs">
+      <DependentUpon>ggqd_query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\ggqd_query.aspx.designer.cs">
+      <DependentUpon>ggqd_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\hdxx.aspx.cs">
+      <DependentUpon>hdxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\hdxx.aspx.designer.cs">
+      <DependentUpon>hdxx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\psgxx.aspx.cs">
+      <DependentUpon>psgxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\psgxx.aspx.designer.cs">
+      <DependentUpon>psgxx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\qdfs.aspx.cs">
+      <DependentUpon>qdfs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\qdfs.aspx.designer.cs">
+      <DependentUpon>qdfs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\qdjscs.aspx.cs">
+      <DependentUpon>qdjscs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\qdjscs.aspx.designer.cs">
+      <DependentUpon>qdjscs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\qdxgxd.aspx.cs">
+      <DependentUpon>qdxgxd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\qdxgxd.aspx.designer.cs">
+      <DependentUpon>qdxgxd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\qdxx.aspx.cs">
+      <DependentUpon>qdxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\qdxx.aspx.designer.cs">
+      <DependentUpon>qdxx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\qlxx.aspx.cs">
+      <DependentUpon>qlxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\qlxx.aspx.designer.cs">
+      <DependentUpon>qlxx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\qtxx.aspx.cs">
+      <DependentUpon>qtxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\qtxx.aspx.designer.cs">
+      <DependentUpon>qtxx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\qxjzw_query.aspx.cs">
+      <DependentUpon>qxjzw_query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\qxjzw_query.aspx.designer.cs">
+      <DependentUpon>qxjzw_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gcssgl\skxx.aspx.cs">
+      <DependentUpon>skxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gcssgl\skxx.aspx.designer.cs">
+      <DependentUpon>skxx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\PageNames.cs" />
+    <Compile Include="map_query\basepage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="map_query\map_manystation_query.aspx.cs">
+      <DependentUpon>map_manystation_query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="map_query\map_manystation_query.aspx.designer.cs">
+      <DependentUpon>map_manystation_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="map_query\map_station.aspx.cs">
+      <DependentUpon>map_station.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="map_query\map_station.aspx.designer.cs">
+      <DependentUpon>map_station.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="map_query\map_stationrain_data.aspx.cs">
+      <DependentUpon>map_stationrain_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="map_query\map_stationrain_data.aspx.designer.cs">
+      <DependentUpon>map_stationrain_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="map_query\map_station_data.aspx.cs">
+      <DependentUpon>map_station_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="map_query\map_station_data.aspx.designer.cs">
+      <DependentUpon>map_station_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="map_query\map_station_query.aspx.cs">
+      <DependentUpon>map_station_query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="map_query\map_station_query.aspx.designer.cs">
+      <DependentUpon>map_station_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="map_query\map_station_query1.aspx.cs">
+      <DependentUpon>map_station_query1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="map_query\map_station_query1.aspx.designer.cs">
+      <DependentUpon>map_station_query1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="map_query\map_station_sluicedata.aspx.cs">
+      <DependentUpon>map_station_sluicedata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="map_query\map_station_sluicedata.aspx.designer.cs">
+      <DependentUpon>map_station_sluicedata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="p2Hour.aspx.cs">
+      <DependentUpon>p2Hour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="p2Hour.aspx.designer.cs">
+      <DependentUpon>p2Hour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pAmount.aspx.cs">
+      <DependentUpon>pAmount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pAmount.aspx.designer.cs">
+      <DependentUpon>pAmount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pCompare.aspx.cs">
+      <DependentUpon>pCompare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pCompare.aspx.designer.cs">
+      <DependentUpon>pCompare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pCompareAmount.aspx.cs">
+      <DependentUpon>pCompareAmount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pCompareAmount.aspx.designer.cs">
+      <DependentUpon>pCompareAmount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pCompareAmountWithWaterUser.aspx.cs">
+      <DependentUpon>pCompareAmountWithWaterUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pCompareAmountWithWaterUser.aspx.designer.cs">
+      <DependentUpon>pCompareAmountWithWaterUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pDataHistroy2.aspx.cs">
+      <DependentUpon>pDataHistroy2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pDataHistroy2.aspx.designer.cs">
+      <DependentUpon>pDataHistroy2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pDayData.aspx.cs">
+      <DependentUpon>pDayData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pDayData.aspx.designer.cs">
+      <DependentUpon>pDayData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pDistributeItem.aspx.cs">
+      <DependentUpon>pDistributeItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pDistributeItem.aspx.designer.cs">
+      <DependentUpon>pDistributeItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pDistributeList.aspx.cs">
+      <DependentUpon>pDistributeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pDistributeList.aspx.designer.cs">
+      <DependentUpon>pDistributeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pDistributeLowLevel.aspx.cs">
+      <DependentUpon>pDistributeLowLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pDistributeLowLevel.aspx.designer.cs">
+      <DependentUpon>pDistributeLowLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pDitchDataChangeLog.aspx.cs">
+      <DependentUpon>pDitchDataChangeLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pDitchDataChangeLog.aspx.designer.cs">
+      <DependentUpon>pDitchDataChangeLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pDuring.aspx.cs">
+      <DependentUpon>pDuring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pDuring.aspx.designer.cs">
+      <DependentUpon>pDuring.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pDuringWaterDefine.aspx.cs">
+      <DependentUpon>pDuringWaterDefine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pDuringWaterDefine.aspx.designer.cs">
+      <DependentUpon>pDuringWaterDefine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pFee.aspx.cs">
+      <DependentUpon>pFee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pFee.aspx.designer.cs">
+      <DependentUpon>pFee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pFeeHistory.aspx.cs">
+      <DependentUpon>pFeeHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pFeeHistory.aspx.designer.cs">
+      <DependentUpon>pFeeHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pFeeItem.aspx.cs">
+      <DependentUpon>pFeeItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pFeeItem.aspx.designer.cs">
+      <DependentUpon>pFeeItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pFormula.aspx.cs">
+      <DependentUpon>pFormula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pFormula.aspx.designer.cs">
+      <DependentUpon>pFormula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pGis.aspx.cs">
+      <DependentUpon>pGis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pGis.aspx.designer.cs">
+      <DependentUpon>pGis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pIFCalc.aspx.cs">
+      <DependentUpon>pIFCalc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pIFCalc.aspx.designer.cs">
+      <DependentUpon>pIFCalc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pInWater.aspx.cs">
+      <DependentUpon>pInWater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pInWater.aspx.designer.cs">
+      <DependentUpon>pInWater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pMulitDuringAmount.aspx.cs">
+      <DependentUpon>pMulitDuringAmount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pMulitDuringAmount.aspx.designer.cs">
+      <DependentUpon>pMulitDuringAmount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pMulitYearAmount.aspx.cs">
+      <DependentUpon>pMulitYearAmount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pMulitYearAmount.aspx.designer.cs">
+      <DependentUpon>pMulitYearAmount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pNeedDistribute.aspx.cs">
+      <DependentUpon>pNeedDistribute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pNeedDistribute.aspx.designer.cs">
+      <DependentUpon>pNeedDistribute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pNeedDistributeLowLevel.aspx.cs">
+      <DependentUpon>pNeedDistributeLowLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pNeedDistributeLowLevel.aspx.designer.cs">
+      <DependentUpon>pNeedDistributeLowLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pNeedWaterItem.aspx.cs">
+      <DependentUpon>pNeedWaterItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pNeedWaterItem.aspx.designer.cs">
+      <DependentUpon>pNeedWaterItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pNeedWaterLowLevel.aspx.cs">
+      <DependentUpon>pNeedWaterLowLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pNeedWaterLowLevel.aspx.designer.cs">
+      <DependentUpon>pNeedWaterLowLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pNewDistribute.aspx.cs">
+      <DependentUpon>pNewDistribute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pNewDistribute.aspx.designer.cs">
+      <DependentUpon>pNewDistribute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pProject.aspx.cs">
+      <DependentUpon>pProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pProject.aspx.designer.cs">
+      <DependentUpon>pProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pNeedWaterList.aspx.cs">
+      <DependentUpon>pNeedWaterList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pNeedWaterList.aspx.designer.cs">
+      <DependentUpon>pNeedWaterList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pRain.aspx.cs">
+      <DependentUpon>pRain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pRain.aspx.designer.cs">
+      <DependentUpon>pRain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pRainCompare.aspx.cs">
+      <DependentUpon>pRainCompare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pRainCompare.aspx.designer.cs">
+      <DependentUpon>pRainCompare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pWaterUser.aspx.cs">
+      <DependentUpon>pWaterUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pWaterUser.aspx.designer.cs">
+      <DependentUpon>pWaterUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pReal.aspx.cs">
+      <DependentUpon>pReal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pReal.aspx.designer.cs">
+      <DependentUpon>pReal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Code\QueryStringNames.cs" />
+    <Compile Include="Code\SessionManager.cs">
+    </Compile>
+    <Compile Include="pWLAdd.aspx.cs">
+      <DependentUpon>pWLAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pWLAdd.aspx.designer.cs">
+      <DependentUpon>pWLAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pWLDelete.aspx.cs">
+      <DependentUpon>pWLDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pWLDelete.aspx.designer.cs">
+      <DependentUpon>pWLDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pWLModify.aspx.cs">
+      <DependentUpon>pWLModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pWLModify.aspx.designer.cs">
+      <DependentUpon>pWLModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pWorking.aspx.cs">
+      <DependentUpon>pWorking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pWorking.aspx.designer.cs">
+      <DependentUpon>pWorking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pWUsedWater.aspx.cs">
+      <DependentUpon>pWUsedWater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pWUsedWater.aspx.designer.cs">
+      <DependentUpon>pWUsedWater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pYear.aspx.cs">
+      <DependentUpon>pYear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pYear.aspx.designer.cs">
+      <DependentUpon>pYear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pYearAmount.aspx.cs">
+      <DependentUpon>pYearAmount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pYearAmount.aspx.designer.cs">
+      <DependentUpon>pYearAmount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pZM.aspx.cs">
+      <DependentUpon>pZM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pZM.aspx.designer.cs">
+      <DependentUpon>pZM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SessionList.aspx.cs">
+      <DependentUpon>SessionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SessionList.aspx.designer.cs">
+      <DependentUpon>SessionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Station.aspx.cs">
+      <DependentUpon>Station.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Station.aspx.designer.cs">
+      <DependentUpon>Station.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Station.cs">
+    </Compile>
+    <Compile Include="strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Test1.aspx.cs">
+      <DependentUpon>Test1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test1.aspx.designer.cs">
+      <DependentUpon>Test1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Titles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Titles.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\qd.ascx.cs">
+      <DependentUpon>qd.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\qd.ascx.designer.cs">
+      <DependentUpon>qd.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCAMChart.ascx.cs">
+      <DependentUpon>UCAMChart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCAMChart.ascx.designer.cs">
+      <DependentUpon>UCAMChart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCChannel.ascx.cs">
+      <DependentUpon>UCChannel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCChannel.ascx.designer.cs">
+      <DependentUpon>UCChannel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCChannelStationDT.ascx.cs">
+      <DependentUpon>UCChannelStationDT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCChannelStationDT.ascx.designer.cs">
+      <DependentUpon>UCChannelStationDT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCChannelStationDTOne.ascx.cs">
+      <DependentUpon>UCChannelStationDTOne.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCChannelStationDTOne.ascx.designer.cs">
+      <DependentUpon>UCChannelStationDTOne.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCCharList.ascx.cs">
+      <DependentUpon>UCCharList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCCharList.ascx.designer.cs">
+      <DependentUpon>UCCharList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCChart.ascx.cs">
+      <DependentUpon>UCChart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCChart.ascx.designer.cs">
+      <DependentUpon>UCChart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCChartWrap.ascx.cs">
+      <DependentUpon>UCChartWrap.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCChartWrap.ascx.designer.cs">
+      <DependentUpon>UCChartWrap.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCChildWaterUserDTTwo.ascx.cs">
+      <DependentUpon>UCChildWaterUserDTTwo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCChildWaterUserDTTwo.ascx.designer.cs">
+      <DependentUpon>UCChildWaterUserDTTwo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCCompareAmount.ascx.cs">
+      <DependentUpon>UCCompareAmount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCCompareAmount.ascx.designer.cs">
+      <DependentUpon>UCCompareAmount.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCCompareCondition.ascx.cs">
+      <DependentUpon>UCCompareCondition.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCCompareCondition.ascx.designer.cs">
+      <DependentUpon>UCCompareCondition.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCCompareWithWaterUser.ascx.cs">
+      <DependentUpon>UCCompareWithWaterUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCCompareWithWaterUser.ascx.designer.cs">
+      <DependentUpon>UCCompareWithWaterUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCConditionDTOne.ascx.cs">
+      <DependentUpon>UCConditionDTOne.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCConditionDTOne.ascx.designer.cs">
+      <DependentUpon>UCConditionDTOne.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCConditionDTTwo.ascx.cs">
+      <DependentUpon>UCConditionDTTwo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCConditionDTTwo.ascx.designer.cs">
+      <DependentUpon>UCConditionDTTwo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCConditionYear.ascx.cs">
+      <DependentUpon>UCConditionYear.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCConditionYear.ascx.designer.cs">
+      <DependentUpon>UCConditionYear.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCDanRi.ascx.cs">
+      <DependentUpon>UCDanRi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCDanRi.ascx.designer.cs">
+      <DependentUpon>UCDanRi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCDTTwoOnly.ascx.cs">
+      <DependentUpon>UCDTTwoOnly.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCDTTwoOnly.ascx.designer.cs">
+      <DependentUpon>UCDTTwoOnly.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCFeeCondition.ascx.cs">
+      <DependentUpon>UCFeeCondition.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCFeeCondition.ascx.designer.cs">
+      <DependentUpon>UCFeeCondition.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCLLWaterUserList.ascx.cs">
+      <DependentUpon>UCLLWaterUserList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCLLWaterUserList.ascx.designer.cs">
+      <DependentUpon>UCLLWaterUserList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCMulitYearCondition.ascx.cs">
+      <DependentUpon>UCMulitYearCondition.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCMulitYearCondition.ascx.designer.cs">
+      <DependentUpon>UCMulitYearCondition.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCNavigation.ascx.cs">
+      <DependentUpon>UCNavigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCNavigation.ascx.designer.cs">
+      <DependentUpon>UCNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCRain.ascx.cs">
+      <DependentUpon>UCRain.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCRain.ascx.designer.cs">
+      <DependentUpon>UCRain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCShiDuan.ascx.cs">
+      <DependentUpon>UCShiDuan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCShiDuan.ascx.designer.cs">
+      <DependentUpon>UCShiDuan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCStation.ascx.cs">
+      <DependentUpon>UCStation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCStation.ascx.designer.cs">
+      <DependentUpon>UCStation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCWaterUser.ascx.cs">
+      <DependentUpon>UCWaterUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCWaterUser.ascx.designer.cs">
+      <DependentUpon>UCWaterUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCWaterUserListDTTwo.ascx.cs">
+      <DependentUpon>UCWaterUserListDTTwo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCWaterUserListDTTwo.ascx.designer.cs">
+      <DependentUpon>UCWaterUserListDTTwo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCWUsedWater1.ascx.cs">
+      <DependentUpon>UCWUsedWater1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCWUsedWater1.ascx.designer.cs">
+      <DependentUpon>UCWUsedWater1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCZedChart.ascx.cs">
+      <DependentUpon>UCZedChart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCZedChart.ascx.designer.cs">
+      <DependentUpon>UCZedChart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCWLAdd.ascx.cs">
+      <DependentUpon>UCWLAdd.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UCWLAdd.ascx.designer.cs">
+      <DependentUpon>UCWLAdd.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="webbaseinfo.aspx.cs">
+      <DependentUpon>webbaseinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webbaseinfo.aspx.designer.cs">
+      <DependentUpon>webbaseinfo.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebChart\WebChart.csproj">
+      <Project>{0B6854E0-F76B-43A8-B57F-6C44B3B84C6A}</Project>
+      <Name>WebChart</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xdgk.UI.AMCharts\Xdgk.UI.AMCharts.csproj">
+      <Project>{264B5C97-5513-4A8F-808D-CDD3FFEC3065}</Project>
+      <Name>Xdgk.UI.AMCharts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xdgk.UI.ZedGraph\Xdgk.UI.ZedGraph.csproj">
+      <Project>{0D338124-8FA6-4595-8928-3AEFE455CFAA}</Project>
+      <Name>Xdgk.UI.ZedGraph</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xdgk.UI\Xdgk.UI.csproj">
+      <Project>{F8FADF2F-FAAE-411B-9661-7C99A101BBC3}</Project>
+      <Name>Xdgk.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YongShuiGuanLiDBI\YongShuiGuanLiDBI.csproj">
+      <Project>{03A15016-533B-4C7D-94DC-CF216B786209}</Project>
+      <Name>YongShuiGuanLiDBI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YongShuiGuanLiLib\YongShuiGuanLiLib.csproj">
+      <Project>{8F130174-10FD-4334-8886-12CF45F43CA9}</Project>
+      <Name>YongShuiGuanLiLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>strings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Titles.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Titles.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="amcharts\amcolumn\amcharts_key.txt" />
+    <Content Include="amcharts\amcolumn\amcolumn.swf" />
+    <Content Include="amcharts\amcolumn\amcolumn_data.txt" />
+    <Content Include="amcharts\amcolumn\amcolumn_data.xml" />
+    <Content Include="amcharts\amcolumn\amcolumn_settings.xml" />
+    <Content Include="amcharts\amcolumn\fonts\arial.swf" />
+    <Content Include="amcharts\amcolumn\fonts\garamond.swf" />
+    <Content Include="amcharts\amcolumn\fonts\tahoma.swf" />
+    <Content Include="amcharts\amcolumn\fonts\times new roman.swf" />
+    <Content Include="amcharts\amcolumn\patterns\diagonal.swf" />
+    <Content Include="amcharts\amcolumn\patterns\horizontal.swf" />
+    <Content Include="amcharts\amcolumn\patterns\vertical.swf" />
+    <Content Include="amcharts\amcolumn\plugins\value_indicator.swf" />
+    <Content Include="amcharts\amcolumn\swfobject.js" />
+    <Content Include="amcharts\amline\amcharts_key.txt" />
+    <Content Include="amcharts\amline\amline.swf" />
+    <Content Include="amcharts\amline\amline_data.txt" />
+    <Content Include="amcharts\amline\amline_data.xml" />
+    <Content Include="amcharts\amline\amline_settings.xml" />
+    <Content Include="amcharts\amline\fonts\arial.swf" />
+    <Content Include="amcharts\amline\fonts\garamond.swf" />
+    <Content Include="amcharts\amline\fonts\georgia.swf" />
+    <Content Include="amcharts\amline\fonts\tahoma.swf" />
+    <Content Include="amcharts\amline\fonts\times new roman.swf" />
+    <Content Include="amcharts\amline\plugins\value_indicator.swf" />
+    <Content Include="amcharts\amline\swfobject.js" />
+    <Content Include="amcharts\ampie\amcharts_key.txt" />
+    <Content Include="amcharts\ampie\ampie.swf" />
+    <Content Include="amcharts\ampie\ampie_data.txt" />
+    <Content Include="amcharts\ampie\ampie_data.xml" />
+    <Content Include="amcharts\ampie\ampie_settings.xml" />
+    <Content Include="amcharts\ampie\patterns\diagonal.swf" />
+    <Content Include="amcharts\ampie\patterns\horizontal.swf" />
+    <Content Include="amcharts\ampie\patterns\vertical.swf" />
+    <Content Include="amcharts\ampie\swfobject.js" />
+    <Content Include="amcharts\amradar\amradar.swf" />
+    <Content Include="amcharts\amradar\amradar_data.txt" />
+    <Content Include="amcharts\amradar\amradar_data.xml" />
+    <Content Include="amcharts\amradar\amradar_settings.xml" />
+    <Content Include="amcharts\amradar\swfobject.js" />
+    <Content Include="amcharts\amxy\amxy.swf" />
+    <Content Include="amcharts\amxy\amxy_data.txt" />
+    <Content Include="amcharts\amxy\amxy_data.xml" />
+    <Content Include="amcharts\amxy\amxy_settings.xml" />
+    <Content Include="amcharts\amxy\fonts\arial.swf" />
+    <Content Include="amcharts\amxy\fonts\garamond.swf" />
+    <Content Include="amcharts\amxy\fonts\georgia.swf" />
+    <Content Include="amcharts\amxy\fonts\tahoma.swf" />
+    <Content Include="amcharts\amxy\fonts\times new roman.swf" />
+    <Content Include="amcharts\amxy\plugins\value_indicator.swf" />
+    <Content Include="amcharts\amxy\swfobject.js" />
+    <Content Include="App_Themes\Common\Common.css" />
+    <Content Include="base_info\gcsj.aspx" />
+    <Content Include="base_info\gcsjtj.aspx" />
+    <Content Include="base_info\gcsj_new.aspx" />
+    <Content Include="base_info\glqk.aspx" />
+    <Content Include="base_info\glqktj.aspx" />
+    <Content Include="base_info\glqk_new.aspx" />
+    <Content Include="base_info\jytz.aspx" />
+    <Content Include="base_info\jytztj.aspx" />
+    <Content Include="base_info\jytz_new.aspx" />
+    <Content Include="ChartData\ChartCommonData.aspx" />
+    <Content Include="ChartData\ChartData1.aspx" />
+    <Content Include="ChartData\ChartData2.aspx" />
+    <Content Include="ChartData\RealData.aspx" />
+    <Content Include="ChartData\UCChartData1.aspx" />
+    <Content Include="debug\pdebug.aspx" />
+    <Content Include="Doc\Todo.txt" />
+    <Content Include="gcssgl\bzxx.aspx" />
+    <Content Include="gcssgl\csdxx.aspx" />
+    <Content Include="gcssgl\dbxx.aspx" />
+    <Content Include="gcssgl\dcxx.aspx" />
+    <Content Include="gcssgl\dhxxx.aspx" />
+    <Content Include="gcssgl\dpxx.aspx" />
+    <Content Include="gcssgl\dsxx.aspx" />
+    <Content Include="gcssgl\gcjcxx_query.aspx" />
+    <Content Include="gcssgl\ggqd_query.aspx" />
+    <Content Include="gcssgl\hdxx.aspx" />
+    <Content Include="gcssgl\psgxx.aspx" />
+    <Content Include="gcssgl\qdfs.aspx" />
+    <Content Include="gcssgl\qdjscs.aspx" />
+    <Content Include="gcssgl\qdxgxd.aspx" />
+    <Content Include="gcssgl\qdxx.aspx" />
+    <Content Include="gcssgl\qlxx.aspx" />
+    <Content Include="gcssgl\qtxx.aspx" />
+    <Content Include="gcssgl\qxjzw_query.aspx" />
+    <Content Include="gcssgl\skxx.aspx" />
+    <Content Include="images\16_back.png" />
+    <Content Include="images\16_exit.png" />
+    <Content Include="images\16_forward.png" />
+    <Content Include="images\16_home.png" />
+    <Content Include="images\16_print.png" />
+    <Content Include="images\16_refresh.png" />
+    <Content Include="images\16_relogin.png" />
+    <Content Include="images\add.gif" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\bg.gif" />
+    <Content Include="images\building.gif" />
+    <Content Include="images\collapse.jpg" />
+    <Content Include="images\del.gif" />
+    <Content Include="images\delete.gif" />
+    <Content Include="images\edit.gif" />
+    <Content Include="images\edt.gif" />
+    <Content Include="images\expand.jpg" />
+    <Content Include="images\grid\head.gif" />
+    <Content Include="images\icon-calendar.gif" />
+    <Content Include="images\i_5.jpg" />
+    <Content Include="images\loginbg.jpg" />
+    <Content Include="images\login\lock.gif" />
+    <Content Include="images\login\Login.gif" />
+    <Content Include="images\login\Login.jpg" />
+    <Content Include="images\login\LoginBtn.gif" />
+    <Content Include="images\login\user.gif" />
+    <Content Include="images\login\userlogin.gif" />
+    <Content Include="images\login_bg.gif" />
+    <Content Include="images\main_28.gif" />
+    <Content Include="images\main_29.gif" />
+    <Content Include="images\main_30.gif" />
+    <Content Include="images\main_31.gif" />
+    <Content Include="images\main_32.gif" />
+    <Content Include="images\main_34.gif" />
+    <Content Include="images\main_55.gif" />
+    <Content Include="images\main_55_1.gif" />
+    <Content Include="images\main_71.gif" />
+    <Content Include="images\main_72.gif" />
+    <Content Include="images\main_74.gif" />
+    <Content Include="images\menu\homepage.jpg" />
+    <Content Include="images\menu\homepage_over.jpg" />
+    <Content Include="images\menu\listmenu_bg.gif" />
+    <Content Include="images\menu\menu_bg.jpg" />
+    <Content Include="images\menu\menu_foot.jpg" />
+    <Content Include="images\menu\menu_over.jpg" />
+    <Content Include="images\menu\menu_right.jpg" />
+    <Content Include="images\menu\synopsis_bg.gif" />
+    <Content Include="images\menu\title_bg.gif" />
+    <Content Include="images\menu\复件 synopsis_bg.gif" />
+    <Content Include="images\rainfall.gif" />
+    <Content Include="images\tab_03.gif" />
+    <Content Include="images\tab_05.gif" />
+    <Content Include="images\tab_07.gif" />
+    <Content Include="images\tab_12.gif" />
+    <Content Include="images\tab_15.gif" />
+    <Content Include="images\tab_17.gif" />
+    <Content Include="images\tab_18.gif" />
+    <Content Include="images\tab_19.gif" />
+    <Content Include="images\tab_20.gif" />
+    <Content Include="images\tab_bg.gif" />
+    <Content Include="images\tb.gif" />
+    <Content Include="images\title.gif" />
+    <Content Include="images\top\head_bg.jpg" />
+    <Content Include="images\top\logo_bg.jpg" />
+    <Content Include="images\top\ns1_exit.gif" />
+    <Content Include="images\top\ns_title.jpg" />
+    <Content Include="images\top\synopsis_bg.gif" />
+    <Content Include="images\top_01.gif" />
+    <Content Include="images\top_01bak.gif" />
+    <Content Include="images\top_02.gif" />
+    <Content Include="images\top_03.gif" />
+    <Content Include="images\top_04.gif" />
+    <Content Include="images\top_05.gif" />
+    <Content Include="images\top_06.gif" />
+    <Content Include="images\top_07.gif" />
+    <Content Include="images\top_bg.gif" />
+    <Content Include="images\top_bg2.gif" />
+    <Content Include="images\user_all_bg.gif" />
+    <Content Include="images\yehe%2812%29.gif" />
+    <Content Include="images\配水中心.gif" />
+    <Content Include="images\配水中心1.gif" />
+    <Content Include="jscript\common.js" />
+    <Content Include="jscript\jquery.js" />
+    <Content Include="jscript\jscalsrc\css\border-radius.css" />
+    <Content Include="jscript\jscalsrc\css\gold\brushed-steel.jpg" />
+    <Content Include="jscript\jscalsrc\css\gold\coolbg.png" />
+    <Content Include="jscript\jscalsrc\css\gold\gold.css" />
+    <Content Include="jscript\jscalsrc\css\gold\gold.jpg" />
+    <Content Include="jscript\jscalsrc\css\img\cool-bg-hard-inv.png" />
+    <Content Include="jscript\jscalsrc\css\img\cool-bg-hard.png" />
+    <Content Include="jscript\jscalsrc\css\img\cool-bg-inv.png" />
+    <Content Include="jscript\jscalsrc\css\img\cool-bg.png" />
+    <Content Include="jscript\jscalsrc\css\img\drop-down.gif" />
+    <Content Include="jscript\jscalsrc\css\img\drop-up.gif" />
+    <Content Include="jscript\jscalsrc\css\img\nav-left-x2.gif" />
+    <Content Include="jscript\jscalsrc\css\img\nav-left.gif" />
+    <Content Include="jscript\jscalsrc\css\img\nav-right-x2.gif" />
+    <Content Include="jscript\jscalsrc\css\img\nav-right.gif" />
+    <Content Include="jscript\jscalsrc\css\img\time-down.png" />
+    <Content Include="jscript\jscalsrc\css\img\time-up.png" />
+    <Content Include="jscript\jscalsrc\css\jscal2.css" />
+    <Content Include="jscript\jscalsrc\css\matrix\matrix.css" />
+    <Content Include="jscript\jscalsrc\css\matrix\nav-left-x2.gif" />
+    <Content Include="jscript\jscalsrc\css\matrix\nav-left.gif" />
+    <Content Include="jscript\jscalsrc\css\matrix\nav-right-x2.gif" />
+    <Content Include="jscript\jscalsrc\css\matrix\nav-right.gif" />
+    <Content Include="jscript\jscalsrc\css\reduce-spacing.css" />
+    <Content Include="jscript\jscalsrc\css\shadow-b.png" />
+    <Content Include="jscript\jscalsrc\css\steel\brushed-steel.jpg" />
+    <Content Include="jscript\jscalsrc\css\steel\brushed-steel.png" />
+    <Content Include="jscript\jscalsrc\css\steel\coolbg.png" />
+    <Content Include="jscript\jscalsrc\css\steel\steel.css" />
+    <Content Include="jscript\jscalsrc\css\steel\steel.jpg" />
+    <Content Include="jscript\jscalsrc\css\win2k\win2k.css" />
+    <Content Include="jscript\jscalsrc\js\jscal2.js" />
+    <Content Include="jscript\jscalsrc\js\lang\ca.js" />
+    <Content Include="jscript\jscalsrc\js\lang\cn.js" />
+    <Content Include="jscript\jscalsrc\js\lang\cz.js" />
+    <Content Include="jscript\jscalsrc\js\lang\de.js" />
+    <Content Include="jscript\jscalsrc\js\lang\en.js" />
+    <Content Include="jscript\jscalsrc\js\lang\es.js" />
+    <Content Include="jscript\jscalsrc\js\lang\fr.js" />
+    <Content Include="jscript\jscalsrc\js\lang\it.js" />
+    <Content Include="jscript\jscalsrc\js\lang\jp.js" />
+    <Content Include="jscript\jscalsrc\js\lang\nl.js" />
+    <Content Include="jscript\jscalsrc\js\lang\pl.js" />
+    <Content Include="jscript\jscalsrc\js\lang\pt.js" />
+    <Content Include="jscript\jscalsrc\js\lang\ro.js" />
+    <Content Include="jscript\jscalsrc\js\lang\ru.js" />
+    <Content Include="jscript\jscalsrc\js\lang\sv.js" />
+    <Content Include="jscript\jscalsrc\js\unicode-letter.js" />
+    <Content Include="map_query\map_manystation_query.aspx" />
+    <Content Include="map_query\map_station.aspx" />
+    <Content Include="map_query\map_stationrain_data.aspx" />
+    <Content Include="map_query\map_station_data.aspx" />
+    <Content Include="map_query\map_station_query.aspx" />
+    <Content Include="map_query\map_station_query1.aspx" />
+    <Content Include="map_query\map_station_sluicedata.aspx" />
+    <Content Include="p2Hour.aspx" />
+    <Content Include="pAmount.aspx" />
+    <Content Include="pCompare.aspx" />
+    <Content Include="pCompareAmount.aspx" />
+    <Content Include="pCompareAmountWithWaterUser.aspx" />
+    <Content Include="pDataHistroy2.aspx" />
+    <Content Include="pDayData.aspx" />
+    <Content Include="pDistributeItem.aspx" />
+    <Content Include="pDistributeList.aspx" />
+    <Content Include="pDistributeLowLevel.aspx" />
+    <Content Include="pDitchDataChangeLog.aspx" />
+    <Content Include="pDuring.aspx" />
+    <Content Include="pDuringWaterDefine.aspx" />
+    <Content Include="pFee.aspx" />
+    <Content Include="pFeeHistory.aspx" />
+    <Content Include="pFeeItem.aspx" />
+    <Content Include="pFormula.aspx" />
+    <Content Include="pGis.aspx" />
+    <Content Include="pIFCalc.aspx" />
+    <Content Include="pInWater.aspx" />
+    <Content Include="pMulitDuringAmount.aspx" />
+    <Content Include="pMulitYearAmount.aspx" />
+    <Content Include="pNeedDistribute.aspx" />
+    <Content Include="pNeedDistributeLowLevel.aspx" />
+    <Content Include="pNeedWaterItem.aspx" />
+    <Content Include="pNeedWaterLowLevel.aspx" />
+    <Content Include="pNewDistribute.aspx" />
+    <Content Include="pProject.aspx" />
+    <Content Include="pNeedWaterList.aspx" />
+    <Content Include="pRain.aspx" />
+    <Content Include="pRainCompare.aspx" />
+    <Content Include="pWaterUser.aspx" />
+    <Content Include="pWLAdd.aspx" />
+    <Content Include="pWLDelete.aspx" />
+    <Content Include="pWLModify.aspx" />
+    <Content Include="pWorking.aspx" />
+    <Content Include="pWUsedWater.aspx" />
+    <Content Include="pYear.aspx" />
+    <Content Include="pYearAmount.aspx" />
+    <Content Include="pZM.aspx" />
+    <Content Include="SessionList.aspx" />
+    <Content Include="Site1.Master" />
+    <Content Include="Test1.aspx" />
+    <Content Include="UC\qd.ascx" />
+    <Content Include="UC\UCAMChart.ascx" />
+    <Content Include="UC\UCChannel.ascx" />
+    <Content Include="UC\UCChannelStationDT.ascx" />
+    <Content Include="UC\UCChannelStationDTOne.ascx" />
+    <Content Include="UC\UCCharList.ascx" />
+    <Content Include="UC\UCChart.ascx" />
+    <Content Include="UC\UCChildWaterUserDTTwo.ascx" />
+    <Content Include="UC\UCCompareAmount.ascx" />
+    <Content Include="UC\UCCompareCondition.ascx" />
+    <Content Include="UC\UCCompareWithWaterUser.ascx" />
+    <Content Include="UC\UCConditionDTOne.ascx" />
+    <Content Include="UC\UCConditionDTTwo.ascx" />
+    <Content Include="UC\UCConditionYear.ascx" />
+    <Content Include="UC\UCDanRi.ascx" />
+    <Content Include="UC\UCDTTwoOnly.ascx" />
+    <Content Include="UC\UCFeeCondition.ascx" />
+    <Content Include="UC\UCLLWaterUserList.ascx" />
+    <Content Include="UC\UCMulitYearCondition.ascx" />
+    <Content Include="UC\UCNavigation.ascx" />
+    <Content Include="UC\UCRain.ascx" />
+    <Content Include="UC\UCShiDuan.ascx" />
+    <Content Include="UC\UCStation.ascx" />
+    <Content Include="UC\UCWaterUser.ascx" />
+    <Content Include="App_Themes\Common\Common.skin" />
+    <None Include="amcharts\amcolumn\fonts\arial.fla" />
+    <None Include="amcharts\amcolumn\patterns\diagonal.fla" />
+    <None Include="amcharts\amcolumn\patterns\horizontal.fla" />
+    <None Include="amcharts\amcolumn\patterns\vertical.fla" />
+    <None Include="amcharts\amline\data_labels" />
+    <None Include="amcharts\amline\fonts\tahoma.fla" />
+    <None Include="amcharts\ampie\patterns\diagonal.fla" />
+    <None Include="amcharts\ampie\patterns\horizontal.fla" />
+    <None Include="amcharts\ampie\patterns\vertical.fla" />
+    <None Include="amcharts\amxy\fonts\tahoma.fla" />
+    <None Include="images\login\Login.psd" />
+    <None Include="web.nlog" />
+    <Content Include="UC\UCWaterUserListDTTwo.ascx" />
+    <Content Include="UC\UCWUsedWater1.ascx" />
+    <Content Include="UC\UCZedChart.ascx" />
+    <Content Include="UC\UCWLAdd.ascx" />
+    <Content Include="Web.sitemap" />
+    <Content Include="webbaseinfo.aspx" />
+    <Content Include="xml\station.xml" />
+    <Content Include="xml\station1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Export\" />
+    <Folder Include="images\d\" />
+    <Folder Include="Test\" />
+    <Folder Include="UpLoadFiles\" />
+    <Folder Include="ZedGraphImages\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10218</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/YongShuiGuanLiV2</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<station>
+  <stationid>
+    <name>LinkButton</name>
+    <id>68</id>
+  </stationid>
+  <stationid>
+    <name>LinkButton3</name>
+    <id>71,72</id>
+  </stationid>
+  <stationid>
+    <name>LinkButton11</name>
+    <id>40,45</id>
+  </stationid>
+  <stationid>
+    <name>LinkButton8</name>
+    <id>34,35,36</id>
+  </stationid>
+  <stationid>
+    <name>LinkButton9</name>
+    <id>32,33</id>
+  </stationid>
+  <stationid>
+    <name>LinkButton10</name>
+    <id>30,31</id>
+  </stationid>
+  <stationid>
+    <name>LinkButton7</name>
+    <id>63,64,65,66,70,74</id>
+  </stationid>
+</station>
+    

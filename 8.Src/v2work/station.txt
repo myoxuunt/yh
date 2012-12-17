@@ -1,0 +1,58 @@
+LinkButton3 28
+LinkButton24 47
+LinkButton25 57
+LinkButton4  23
+LinkButton5  24
+LinkButton6  27
+LinkButton7  22
+LinkButton28 (封城配水闸)
+LinkButton28 (宋西冶配水闸)
+LinkButton8 5(东冶南分干)
+LinkButton9 18(东冶北分干)
+LinkButton20 58(里庄雨量站)
+LinkButton10 19(采石场测站)
+LinkButton11 21(二岔口)
+LinkButton12 11（南石桥测站）
+LinkButton36 59(南石桥雨量站)
+LinkButton13 (牛山泄水闸测站)
+LinkButton30 54(牛山泄雨量站 )
+LinkButton14 13(山前测站)
+LinkButton31 48(山前雨量站)
+LinkButton21 49(宜安雨量站)
+LinkButton15(大孝庄测站)
+LinkButton32 60(大孝庄雨量站)
+LinkButton22 50(城关雨量站)
+LinkButton16 14（南任村测站）
+LinkButton33 55(南任村雨量站)
+LinkButton23 51(铜冶雨量站)
+LinkButton17 12(马山头测站)
+LinkButton34 52(马山头雨量站)
+LinkButton18 10(范庄测站)
+LinkButton35 56(范庄雨量站)
+LinkButton26 41,42,43,44(九石洞)
+LinkButton27 37，38，39（渠首）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="YongShuiGuanLiV2.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>冶河灌区用水管理信息系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <link href="page.files/index.css" type="text/css" rel="stylesheet" />
+    <link href="page.files/news.css" type="text/css" rel="stylesheet" />
+    <meta content="MSHTML 6.00.2900.6058" name="GENERATOR" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" width="500px">
+    <!--top star-->
+    <div id="top">
+        <div id="logo">
+            <table>
+                <tr>
+                    <td width="441">
+                        <img alt="head_background" height="66" src="page.files/head_bg3.jpg" width="441" />
+                    </td>
+                    <td width="486" align="right" nowrap="nowrap" style="color: #000000; padding-top: 8px">
+                        &nbsp;<asp:Label ID="lblLoginInfo" runat="server" BorderColor="#FF6699" BorderStyle="Dashed"
+                            BorderWidth="1px"></asp:Label>
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--<div id="menu">-->
+        <div>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" 
+                Orientation="Horizontal" StaticDisplayLevels="2">
+            </asp:Menu>
+            <!--
+            <ul>
+                <li><a class="here" id="menu_home" href="pReal.aspx">实时数据</a> </li>
+                <li><a href="pDataHistory.aspx">历史数据</a> </li>
+                <li><a href="dDay.aspx">单日数据</a> </li>
+                <li><a href="dDuring.aspx">放水期数据</a> </li>
+                <li><a href="dYear.aspx">年数据</a> </li>
+                <li><a href="pProject.aspx">基础数据</a></li>
+                <li><a href="pWaterUser.aspx">用水户信息</a> </li>
+                <li id="right"></li>
+            </ul>
+        -->
+        </div>
+        <%--        <div id="menu_foot">
+            <asp:Menu ID="Menu1" runat="server">
+            </asp:Menu>
+        </div>
+--%>
+    </div>
+    <!--top end-->
+    <!--中间部分-->
+    <div class="content">
+        <!--左侧导航-->
+        <%--  <div class="content_L">
+            <div class="content_L_top">
+                <div >
+                </div>
+            </div>
+            <div class="content_l_list">
+                <ul>
+                </ul>
+            </div>
+        </div>--%>
+        <!--右侧内容部分-->
+        <!--右侧内容部分-->
+        <div class="content_R">
+            <!--右侧方案列表-->
+            <div class="newslist">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <!-- 页脚 -->
+        </div>
+    </div>
+    <div class="bottom">
+        <p>
+            <br />
+            地址：河北省石家庄市
+            <br />
+            石家庄市冶河灌区管理局 版权所有<br />
+        </p>
+    </div>
+    </form>
+</body>
+</html>

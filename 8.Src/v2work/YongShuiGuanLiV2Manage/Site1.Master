@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="YongShuiGuanLiV2Manage.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <style type="text/css">
+        div
+        {
+            border: dotted 0px black;
+        }
+        h2
+        {
+        	margin: 0px;
+        }
+    </style>
+    <title>冶河灌区信息化系统 - 后台管理</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <h1 style="margin:0px; border-bottom: dotted thin #ccc;padding-bottom: 20px;">冶河灌区信息化系统 - 后台管理</h1>
+    <div style="width: 1000px;">
+        <div style="border-right: thin dotted #ccc; 
+            width: 200px; 
+            height:600px; 
+            float: left; background-color: #fff;
+            margin-right:20px;">
+            <ul>
+                <li><a href="ChannelList.aspx">渠道管理</a> </li>
+                <li><a href="WaterUserList.aspx">用水户管理</a> </li>
+                <li><a href="pDuringList.aspx">放水季管理</a></li>
+                <li><a href="pLoginList.aspx">登录管理</a></li>
+                <li><a href="webbaseinfo.aspx">灌区基础信息管理</a></li>
+                <li><a href="pCQModify.aspx">重庆设备信息</a></li>
+            </ul>
+        </div>
+        <div style="float: left;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

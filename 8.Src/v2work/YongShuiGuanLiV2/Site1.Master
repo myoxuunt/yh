@@ -1,0 +1,362 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="YongShuiGuanLiV2.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>冶河灌区信息化系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <script src="jscript/jquery.js" type="text/javascript"></script>
+    <script type="text/jscript" src="jscript/jscalsrc/js/jscal2.js"></script>
+
+    <script type="text/jscript" src="jscript/jscalsrc/js/lang/cn.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="jscript/jscalsrc/css/jscal2.css" />
+
+    <script type="text/jscript">
+            /*
+             *
+             */
+            function writeCookie(name, value, hours)
+            {
+                var expire = "";
+                if(hours != null)
+                {
+                    expire = new Date((new Date()).getTime() + hours * 3600000);
+                    expire = "; expires=" + expire.toGMTString();
+                }
+                document.cookie = name + "=" + escape(value) + expire;
+            }
+
+            /*
+             *
+             */
+            function readCookie(name)
+            {
+                var cookieValue = "";
+                var search = name + "=";
+                if(document.cookie.length > 0)
+                { 
+                    offset = document.cookie.indexOf(search);
+                    if (offset != -1)
+                    { 
+                        offset += search.length;
+                        end = document.cookie.indexOf(";", offset);
+                        if (end == -1) end = document.cookie.length;
+                        cookieValue = unescape(document.cookie.substring(offset, end))
+                    }
+                }
+                return cookieValue;
+            }
+
+            /*
+            *
+            */
+            function hideall()
+            {
+                var menucount = 8;
+                var i;
+                for( i=0; i<menucount; i++)
+                {
+                    var menuname = 'menu' + i;
+                    document.getElementById(menuname).style.display = 'none';
+                    document.getElementById(menuname).onclick=function(){this.classname='curr'};
+                }
+                /*
+                document.getElementById('menua').style.display='none';
+                document.getElementById('menub').style.display='none';
+                document.getElementById('menuc').style.display='none';
+                */
+            }
+
+            function showmenu(menuid)
+            {
+                hideall();
+                document.getElementById(menuid).style.display='block';
+                writeCookie('selectedmenu', menuid);
+            }
+
+            function showselectedmenu()
+            {
+                hideall ();
+                var v = readCookie('selectedmenu');
+                if(v != "")
+                {
+                    document.getElementById(v).style.display='block';
+                }
+            }
+
+            /*
+            *
+            */
+      function setup_calender_with_format( buttonid, textid, format) {
+        var btn = document.getElementById (buttonid);
+        if( btn == undefined )
+        {
+            throw 'not find button by id: ' + buttonid;
+        }
+        
+        var txt = document.getElementById(textid);
+        if ( txt == undefined )
+        {
+            throw 'not find text by id: ' + textid;
+        }
+
+        var cal = Calendar.setup({
+            onSelect: function(cal) { cal.hide() },
+            showTime: true
+        });
+
+        cal.manageFields( btn, txt, format);
+      }
+
+
+      function setup_calender_with_date( buttonid, textid ) {
+        setup_calender_with_format(buttonid, textid, "%Y-%m-%d");
+      }
+
+      function setup_calender_with_datetime( buttonid, textid) {
+        setup_calender_with_format(buttonid, textid, "%Y-%m-%d %H:%M:%S");
+      }
+
+      function setup_calender( buttonid, textid) {
+        setup_calender_with_date(buttonid, textid);
+      }
+
+
+    </script>
+
+    <style type="text/css">
+        #menulevela
+        {
+            background-color: #6c8dbf;
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            list-style-type: none;
+        }
+        #menulevela li
+        {
+            display: inline;
+        }
+        #menulevela li a
+        {
+            background-color: #BDD6EF;
+            margin-left: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 3px;
+            padding-bottom: 5px;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        #menulevelb
+        {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: solid 1px #ccc;
+            height: 25px;
+            background-color: #e3eaeb;
+        }
+        #menulevelb div
+        {
+            font-size: 12px;
+            display: none;
+            background-color: #e3eaeb;
+        }
+        A:link, A:active, A:visited
+        {
+            font-size: 9pt;
+            color: #000000;
+            text-decoration: none;
+        }
+        a:hover
+        {
+            font-size: 9pt;
+            color: #ff0000;
+            text-decoration: none;
+        }
+        .curr
+        {
+            background-color: Blue;
+        }
+        tr, th
+        {
+            font-size: 12px;
+        }
+        td.fh /* forumRowHighlight - such as forumOptions, forumStatistics, WhoIsOnline boxes etc.*/
+        {
+            font-size: 0.8em;
+            background-color: #FFFFFF;
+            background-image: url(../themes/default/images/fhBg.gif);
+            background-repeat: repeat-x;
+        }
+    </style>
+    <meta content="MSHTML 6.00.2900.6058" name="GENERATOR" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="showselectedmenu()">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div id="wrapper">
+        <div id="login" style="background-color: #6c8dbf;">
+            <asp:Label ID="lblLoginInfo" runat="server" ForeColor="White">
+            </asp:Label>
+            |
+            <asp:LoginStatus ID="LoginStatus1" runat="server" ForeColor="White" />
+        </div>
+        <!--top star-->
+        <div id="top">
+            <div id="logo" style="background-color: #6c8dbf; height: 59px;">
+                <h1 style="color: white; margin: 0px; font-size: 28px;">
+                    冶河灌区信息化系统
+                </h1>
+                <p id="logo_title_en" style="font-size: 16px; margin-bottom: 0px;">
+                    YEHE GUANQU XINXIHUA XITONG
+                </p>
+            </div>
+            <ul id="menulevela">
+                <li><a href="#" onclick="showmenu('menu0')">基础信息</a></li>
+                <li><a href="#" onclick="showmenu('menu1')">水情监测</a></li>
+                <li><a href="#" onclick="showmenu('menu2')">雨情监测</a></li>
+                <li><a href="#" onclick="showmenu('menu3')">闸门工情监测</a></li>
+                <li><a href="#" onclick="showmenu('menu4')">视频监测</a></li>
+                <li><a href="#" onclick="showmenu('menu5')">土壤墒情监测</a></li>
+                <li><a href="#" onclick="showmenu('menu6')">水费计收管理</a></li>
+                <li><a href="#" onclick="showmenu('menu7')">地图及三维仿真</a></li>
+            </ul>
+            <asp:Menu ID="Menu1" runat="server" Visible="False" DataSourceID="SiteMapDataSource1"
+                Orientation="Horizontal" StaticDisplayLevels="2" BackColor="#B5C7DE" DynamicHorizontalOffset="2"
+                Font-Names="宋体" Font-Size="Small" ForeColor="#284E98" StaticSubMenuIndent="10px">
+                <StaticSelectedStyle BackColor="#507CD1" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                <DynamicMenuStyle BackColor="#B5C7DE" />
+                <DynamicSelectedStyle BackColor="#507CD1" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+            </asp:Menu>
+            <div id="menulevelb">
+                <div id="menu0">
+                    <asp:Menu ID="menu0menu" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="pProject.aspx" Text="渠道信息" Value="渠道信息"></asp:MenuItem>
+                            <%--<asp:MenuItem NavigateUrl="pDuringWaterDefine.aspx" Text="放水季定义" Value="放水季定义"></asp:MenuItem>--%>
+                            <asp:MenuItem NavigateUrl="pWaterUser.aspx" Text="用户信息" Value="用户信息"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="webbaseinfo.aspx?para=1" Text="灌区基础信息查询" Value="用户信息">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="base_info/jytz.aspx" Text="经营投资情况" Value="经营投资情况"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="base_info/gcsj.aspx" Text="工程数据情况" Value="工程数据情况"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="base_info/glqk.aspx" Text="管理情况统计" Value="管理情况统计"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="gcssgl/gcjcxx_query.aspx" Text="水源工程信息查询" Value="水源工程信息查询">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="gcssgl/ggqd_query.aspx" Text="灌溉渠道信息查询" Value="灌溉渠道信息查询">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="gcssgl/qxjzw_query.aspx" Text="渠系建筑物信息查询" Value="渠系建筑物信息查询">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="gcssgl/psgxx.aspx" Text="排水沟信息查询" Value="排水沟信息查询"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </div>
+                <div id="menu1">
+                    <asp:Menu ID="menu1menu" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="pDataHistroy2.aspx?DataEnum=wl" Text="水位查询" Value="水位查询">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="pDataHistroy2.aspx?DataEnum=Flux" Text="流量查询" Value="流量查询">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="pDataHistroy2.aspx?DataEnum=Amount" Text="水量查询" Value="水量查询">
+                            </asp:MenuItem>
+                            
+                            <asp:MenuItem NavigateUrl="pCompareAmount.aspx" Text="水量对比" Value="水量对比">
+                            </asp:MenuItem>
+                            
+                            <asp:MenuItem NavigateUrl="~/pWLAdd.aspx" Text="水位增加" Value="水位增加"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="pWLModify.aspx" Text="水位修改" Value="水位修改">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/pWLDelete.aspx" Text="水位删除" Value="水位删除"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/pIFCalc.aspx" Text="重新计算" Value="重新计算"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </div>
+                <div id="menu2">
+                    <asp:Menu ID="menu2menu" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="pRain.aspx" Text="雨情信息" Value="雨情信息"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="pRainCompare.aspx" Text="雨情对比" Value="雨情对比"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </div>
+                <div id="menu3">
+                    <asp:Menu ID="menu3menu" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="pZM.aspx" Text="闸门信息" Value="闸门信息"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </div>
+                <div id="menu4">
+                    <asp:Menu ID="menu4menu" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="pWorking.aspx" Text="视频监测" Value="视频监测"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </div>
+                <div id="menu5">
+                    <asp:Menu ID="menu5menu" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="pWorking.aspx" Text="土壤墒情" Value="土壤墒情"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </div>
+                <div id="menu6">
+                    <asp:Menu ID="menu6menu" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="pFeeItem.aspx" Text="水费计收" Value="水费计收"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="pFeeHistory.aspx" Text="水费查询" Value="水费查询"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </div>
+                <div id="menu7">
+                    <asp:Menu ID="menu7menu" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="map_query/map_station.aspx" Text="平面地图" Value="平面地图">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="http://192.168.2.65/DataIntegrateForYH/index.html" Text="地理信息"
+                                Value="地理信息" Target="_blank"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="pWorking.aspx" Text="三维仿真" Value="三维仿真"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </div>
+            </div>
+            <!--<div id="menu">-->
+            <div style="background-color: #E3EAEB">
+            </div>
+            <div id="TitleWrapper">
+                <asp:Label ID="lblTitle" runat="server" Text="" CssClass="TitleClass"></asp:Label>
+            </div>
+        </div>
+        <!--中间部分-->
+        <div id="content">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+    </div>
+    <div id="bottom">
+        <hr style="width: 1000px" />
+        <p>
+            地址：河北省石家庄市
+            <br />
+            石家庄市冶河灌区管理局 版权所有<br />
+        </p>
+    </div>
+    <input id='hi1' type="hidden" name="hi1" value="" runat="server" />
+    </form>
+</body>
+</html>

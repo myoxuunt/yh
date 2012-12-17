@@ -1,0 +1,140 @@
+﻿body
+{
+	font-size:12px;
+	background-color:#f9f9f9;
+}
+.CommonPane
+{
+	text-align: left;
+	vertical-align: top;
+}
+
+.TopLeftClass
+{
+		text-align: left;
+	vertical-align: top;
+}
+
+.TreeClass
+{
+	width: 300px;
+	height: 600px;
+}
+
+
+.TDLabelClass
+{
+	width: 100px;
+	text-align: left;
+	vertical-align: top;
+}
+.TextBoxClass
+{
+	width: 200px;
+}
+
+.DropDownListClass
+{
+	width:200px;
+}
+
+.ListBoxClass
+{
+	width:200px;
+	height :100px;
+}
+
+.RemarkClass
+{
+	width: 200px;
+	height: 100px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.TitleClass
+{
+	text-align:left;
+	font-size:18px;
+	font-family:黑体;
+}
+.data_row_checked
+{
+}
+
+fieldset
+{
+}
+
+#wrapper
+{
+	/*
+	text-align:	center;
+*/
+	background-color:White;
+	margin: auto;
+	border-style: none;
+	border-width: 0px;
+	width: 1000px;
+	min-height: 600px;
+}
+
+#TitleWrapper
+{
+	background-color: #e6e6e6;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom:20px;
+}
+
+#login
+{
+    text-align: right;
+}
+	
+#bottom
+{
+    text-align: center;
+}
+
+#logo
+{
+	/*
+	background-color: #333399;
+	*/
+}
+
+#logo_title_cn
+{ 
+	font-family: 黑体;
+	margin:0px;
+	padding:0px;
+	font-size: x-large;
+	color: #008080;
+	vertical-align: bottom; 
+	font-weight: bold; 
+	}
+
+
+#logo_title_en
+{
+	margin:0px;
+	margin-bottom:20px;
+	font-size: medium;
+	font-family: 黑体;
+	color: #9999FF;
+	clip: rect(-20px, auto, auto, auto);
+}
+
+/*
+h1
+{
+	background-color : Gray;
+	text-align:right;
+}
+*/
+
+#loginWrapper
+{
+	margin: auto;
+}

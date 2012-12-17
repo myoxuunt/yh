@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/default.aspx" title=""  description="">
+    <!--deng lu-->
+    <siteMapNode url="" title="基础信息">
+      <siteMapNode url="pWaterUser.aspx" title ="用户信息"/>
+      <siteMapNode url="pProject.aspx" title ="渠道信息"/>
+      <siteMapNode url="pDuringWaterDefine.aspx" title ="放水季定义" />
+    </siteMapNode>
+
+    <!--
+    <siteMapNode url="~/pReal.aspx" title="实时数据"  description="" />
+    -->
+
+    <!--
+    <siteMapNode url="" title ="历史数据">
+      <siteMapNode url ="" title ="多测点查询" />
+    </siteMapNode>
+    -->
+
+
+    <siteMapNode url="" title ="水位查询">
+      <siteMapNode url="pDataHistroy2.aspx?DataEnum=wl" title ="水位"/>
+      <!--<siteMapNode url ="pDataHistory.aspx" title ="历史水位" />
+      <siteMapNode url="pDayData.aspx" title ="日水位"/>
+      <siteMapNode url="pDuring.aspx?DataEnum=WL" title="阶段水位"/>
+      <siteMapNode url="pYear.aspx?DataEnum=WL" title="年水位"/>
+      <siteMapNode url="pCompare.aspx" title="水位对比"/>-->
+      <siteMapNode url="pDitchDataChangeLog.aspx" title="修改记录" />
+    </siteMapNode>
+
+    <siteMapNode url="" title ="流量查询">
+      <siteMapNode url="pDataHistroy2.aspx?DataEnum=Flux" title ="流量"/>
+      <!--<siteMapNode url="p2Hour.aspx?DataEnum=Flux" title ="日流量"/>
+      <siteMapNode url="" title ="阶段流量"/>
+      <siteMapNode url="pYear.aspx?DataEnum=Flux" title="年流量"/>
+      <siteMapNode url="" title="流量对比"/>-->
+    </siteMapNode>
+                 
+    <siteMapNode url="" title ="水量查询">
+      <siteMapNode url ="pDataHistroy2.aspx?DataEnum=Amount" title ="水量"/>
+      
+      <!--
+      <siteMapNode url ="pYear.aspx?DataEnum=Amount" title ="年水量"/>
+      <siteMapNode url ="pMulitYearAmount.aspx" title ="历年用水量" />
+      <siteMapNode url ="pCompare.aspx?DataEnum=Amount" title ="水量对比" />
+      -->
+      <siteMapNode url ="pCompareAmount.aspx" title ="水量对比" />
+      <!--<siteMapNode url ="pCompareAmountWithWaterUser.aspx" title ="水量对比" />-->
+    </siteMapNode>
+
+    <!--当前用户的来水数量-->
+    <!--
+    <siteMapNode url="pInWater.aspx" title ="来水量统计"/>
+    -->
+
+    <siteMapNode url="" title ="水费查询">
+      <siteMapNode url="pFeeHistory.aspx" title="历史水费" />
+      <siteMapNode url="pFeeItem.aspx" title="新建水费" />
+    </siteMapNode>
+
+
+    <siteMapNode url="" title="需水信息">
+      <siteMapNode url ="pNeedWaterItem.aspx" title ="新建需水" />
+      <siteMapNode url ="pNeedWaterList.aspx" title ="本单位需水" />
+      <siteMapNode url ="pNeedWaterLowLevel.aspx" title ="下级单位需水" />
+    </siteMapNode>
+
+    <siteMapNode url ="" title ="配水信息">
+      <siteMapNode url="pNewDistribute.aspx" title ="新建配水" />
+      <siteMapNode url="pDistributeList.aspx" title ="本单位配水"/>
+      <siteMapNode url="pDistributeLowLevel.aspx" title ="下级单位配水"/>
+    </siteMapNode>
+
+    <siteMapNode url="pZM.aspx" title ="闸门信息">
+    </siteMapNode>
+    
+    <siteMapNode url="pRain.aspx" title ="雨情信息">
+      <!--<siteMapNode url="pRain.aspx" title ="雨情信息"/>-->
+    </siteMapNode>
+
+    <siteMapNode url="" title="地图信息">
+      <siteMapNode url="pGis.aspx" title ="地理信息系统" />
+    </siteMapNode>
+    
+    <!--
+    <siteMapNode url ="" title ="需配统计">
+      <siteMapNode url ="pNeedDistribute.aspx" title ="本单位需配水统计" />
+      <siteMapNode url="pNeedDistributeLowLevel.aspx" title ="下级单位需配水统计" />
+    </siteMapNode>
+    -->
+    <!--yongshui jihua-->
+
+  </siteMapNode>
+</siteMap>

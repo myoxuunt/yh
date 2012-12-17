@@ -1,0 +1,21 @@
+ditch           沟渠
+sluice          闸门
+weir            堰
+rectangle       矩形
+Parshall        巴歇尔
+flume           槽
+echelon         梯形
+Cutthroat       无喉道
+throat          喉道
+open channel    明渠
+pulse           脉冲
+monopulse       单脉冲
+dipulse         双脉冲
+sensitivity     灵敏度
+baud rate       波特率
+modulus         系数
+coarse          糙
+slope           斜坡
+MeasureSluice   计量闸门
+
+candidate       候选

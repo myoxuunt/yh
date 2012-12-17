@@ -1,0 +1,13 @@
+------------------------------------------------------------------------------------
+Cisco ASA 5505 series                       1       防火墙
+    Adaptive security applicatine
+
+MP2600C                                     1       路由器
+Cisco 2800 series                           1       路由器
+Catalyst 3560 series                        1       核心交换机
+Catalyst 2960 series                        2       交换机
+
+RCMS2201-60-S1                              1       光电转换
+RC952-FEEL-BL                               2
+
+

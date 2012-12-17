@@ -1,0 +1,13 @@
+XD221 Modbus write command
+
+
+01 10 00 00 00 01 02 AA BB .. ..
+-- -- ----- ----- -- ----- -----
+a  f  b     wc    bc d     crc
+
+a  - address
+f  - fc
+b  - begin
+wc - word count
+bc - byte count 
+d  - data

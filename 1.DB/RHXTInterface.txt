@@ -1,0 +1,22 @@
+2010-08-06
+同北京润华信通数据库接口
+
+WaterDatas
+    Name
+    AllAmount
+    Amount
+    WaterLevel
+    Time
+
+vRTSluiceData
+    Name
+    Height
+    WaterLevel1
+    WaterLevel2
+    DT
+
+vRTRailFill
+    Name
+    RainFill
+    DT
+

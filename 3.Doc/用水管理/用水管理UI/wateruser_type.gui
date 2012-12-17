@@ -1,0 +1,94 @@
+<Screen
+	CID = "1"
+	HasCanvas = "1"
+	Width = "640"
+	Height = "480"
+	NextCID = "4"
+	RepresentativeRefID = "0">
+	<Elements
+		CID = "1"
+		NextCID = "5">
+		<Element
+			CID = "1"
+			Type = "GroupBox"
+			X = "22"
+			Y = "25"
+			Width = "235"
+			Height = "88"
+			Flags = "0"
+			TextColour = "0,0,0,0,34"
+			TextPlacement = "None"
+			HorzAlign = "Left"
+			Text = "用水户类型"
+			TextOutsideExtent = "1"/>
+		<Element
+			CID = "2"
+			Type = "TextButton"
+			X = "95"
+			Y = "119"
+			Width = "75"
+			Height = "23"
+			Flags = "0"
+			TextColour = "0,0,0,0,19"
+			Text = "新建"
+			TextSize = "正常"
+			FontAttributes = "0"
+			Depth = "2"
+			IsDefault = "1"
+			IsDisabled = "0"
+			MarginLeft = "0"
+			MarginRight = "0"
+			MarginTop = "0"
+			MarginBottom = "0"
+			AutoNavType = "Accept"/>
+		<Element
+			CID = "3"
+			Type = "TextButton"
+			X = "179"
+			Y = "119"
+			Width = "75"
+			Height = "23"
+			Flags = "0"
+			TextColour = "0,0,0,0,19"
+			Text = "删除"
+			TextSize = "正常"
+			FontAttributes = "0"
+			Depth = "2"
+			IsDefault = "0"
+			IsDisabled = "0"
+			MarginLeft = "0"
+			MarginRight = "0"
+			MarginTop = "0"
+			MarginBottom = "0"
+			AutoNavType = "Cancel"/>
+		<Element
+			CID = "4"
+			Type = "EditBoxMultiLine"
+			X = "34"
+			Y = "37"
+			Width = "211"
+			Height = "64"
+			Flags = "0"
+			IsDisabled = "0"
+			IsReadOnly = "0"
+			HasHorzScrollBar = "0"
+			HasVertScrollBar = "1"
+			WordWrap = "1"
+			HorzOffset = "0"
+			FirstVisibleLine = "1"
+			HorzAlign = "Left">
+			农业用水户&#13;&#10;工业用水户&#13;&#10;环境用水户
+		</Element>
+	</Elements>
+	<Connections
+		CID = "2"/>
+	<Notes
+		CID = "3"
+		NextCID = "2">
+		<Note
+			CID = "1"
+			Name = "Description">
+			
+		</Note>
+	</Notes>
+</Screen>

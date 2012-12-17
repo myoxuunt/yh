@@ -1,0 +1,329 @@
+<Screen
+	CID = "1"
+	HasCanvas = "1"
+	Width = "640"
+	Height = "480"
+	NextCID = "4"
+	RepresentativeRefID = "0">
+	<Elements
+		CID = "1"
+		NextCID = "17">
+		<Element
+			CID = "1"
+			Type = "HorizontalTabBar"
+			X = "231"
+			Y = "14"
+			Width = "285"
+			Height = "297"
+			Flags = "0"
+			NextItemID = "4"
+			LeftMargin = "0"
+			RightMargin = "0"
+			SelectedTab = "0"
+			IsProportional = "1"
+			IsFullWidth = "0"
+			IsReversed = "0"
+			TabMarginLeft = "0"
+			TabMarginRight = "0"
+			TabMarginTop = "0"
+			TabMarginBottom = "0">
+			<TabBarItem
+				ItemID = "1"
+				Text = "常规"
+				IsDisabled = "0"/>
+		</Element>
+		<Element
+			CID = "2"
+			Type = "Tree"
+			X = "8"
+			Y = "16"
+			Width = "194"
+			Height = "293"
+			Flags = "0"
+			IsDisabled = "0"
+			HasBorder = "1"
+			HasButtons = "1"
+			HasLines = "1"
+			HasLinesAtRoot = "1"
+			HasHorzScrollBar = "0"
+			HasVertScrollBar = "0"
+			WordWrap = "0"
+			IconMargin = "0"
+			ItemHeight = "16"
+			Icons = "Folders">
+			<TreeItem
+				Text = "引岗总干"
+				IsBold = "0"
+				IsChecked = "1"
+				IsExpanded = "0"
+				IsSelected = "0">
+				<TreeItem
+					Text = "测点9"
+					IsBold = "0"
+					IsChecked = "1"
+					IsExpanded = "0"
+					IsSelected = "0"/>
+			</TreeItem>
+			<TreeItem
+				Text = "引冶总干"
+				IsBold = "0"
+				IsChecked = "1"
+				IsExpanded = "0"
+				IsSelected = "0">
+				<TreeItem
+					Text = "测点8"
+					IsBold = "0"
+					IsChecked = "1"
+					IsExpanded = "0"
+					IsSelected = "0"/>
+			</TreeItem>
+			<TreeItem
+				Text = "一支渠"
+				IsBold = "0"
+				IsChecked = "1"
+				IsExpanded = "1"
+				IsSelected = "0">
+				<TreeItem
+					Text = "水位测点1"
+					IsBold = "0"
+					IsChecked = "1"
+					IsExpanded = "0"
+					IsSelected = "0"/>
+				<TreeItem
+					Text = "水位测点2"
+					IsBold = "0"
+					IsChecked = "1"
+					IsExpanded = "0"
+					IsSelected = "0"/>
+			</TreeItem>
+			<TreeItem
+				Text = "二支渠"
+				IsBold = "0"
+				IsChecked = "1"
+				IsExpanded = "0"
+				IsSelected = "0">
+				<TreeItem
+					Text = "测点3"
+					IsBold = "0"
+					IsChecked = "1"
+					IsExpanded = "0"
+					IsSelected = "0"/>
+			</TreeItem>
+			<TreeItem
+				Text = "三支渠"
+				IsBold = "0"
+				IsChecked = "1"
+				IsExpanded = "0"
+				IsSelected = "0">
+				<TreeItem
+					Text = "测点4"
+					IsBold = "0"
+					IsChecked = "1"
+					IsExpanded = "0"
+					IsSelected = "0"/>
+			</TreeItem>
+		</Element>
+		<Element
+			CID = "3"
+			Type = "StaticText"
+			X = "236"
+			Y = "41"
+			Width = "100"
+			Height = "21"
+			Flags = "0"
+			FillColour = "174,168,217,0,16"
+			TextColour = "0,0,0,0,19"
+			Text = "名称:"
+			FontAttributes = "0"
+			IsDisabled = "0"
+			Fill = "None"
+			TextSize = "正常"
+			HorzAlign = "Left"
+			VertAlign = "Centre"/>
+		<Element
+			CID = "4"
+			Type = "EditBox"
+			X = "336"
+			Y = "41"
+			Width = "120"
+			Height = "21"
+			Flags = "2"
+			Text = "牛山用水户"
+			IsDisabled = "0"
+			IsReadOnly = "0"
+			HorzAlign = "Left"/>
+		<Element
+			CID = "5"
+			Type = "StaticText"
+			X = "236"
+			Y = "77"
+			Width = "100"
+			Height = "21"
+			Flags = "0"
+			FillColour = "174,168,217,0,16"
+			TextColour = "0,0,0,0,19"
+			Text = "测点类型:"
+			FontAttributes = "0"
+			IsDisabled = "0"
+			Fill = "None"
+			TextSize = "正常"
+			HorzAlign = "Left"
+			VertAlign = "Centre"/>
+		<Element
+			CID = "6"
+			Type = "EditBox"
+			X = "336"
+			Y = "77"
+			Width = "120"
+			Height = "21"
+			Flags = "2"
+			Text = "水位流量计"
+			IsDisabled = "0"
+			IsReadOnly = "0"
+			HorzAlign = "Left"/>
+		<Element
+			CID = "9"
+			Type = "StaticText"
+			X = "236"
+			Y = "111"
+			Width = "100"
+			Height = "21"
+			Flags = "0"
+			FillColour = "174,168,217,0,16"
+			TextColour = "0,0,0,0,19"
+			Text = "所属渠道:"
+			FontAttributes = "0"
+			IsDisabled = "0"
+			Fill = "None"
+			TextSize = "正常"
+			HorzAlign = "Left"
+			VertAlign = "Centre"/>
+		<Element
+			CID = "10"
+			Type = "EditBox"
+			X = "336"
+			Y = "111"
+			Width = "120"
+			Height = "21"
+			Flags = "2"
+			Text = "一支渠"
+			IsDisabled = "0"
+			IsReadOnly = "0"
+			HorzAlign = "Left"/>
+		<Element
+			CID = "11"
+			Type = "StaticText"
+			X = "236"
+			Y = "145"
+			Width = "100"
+			Height = "21"
+			Flags = "0"
+			FillColour = "174,168,217,0,16"
+			TextColour = "0,0,0,0,19"
+			Text = "所属单位:"
+			FontAttributes = "0"
+			IsDisabled = "0"
+			Fill = "None"
+			TextSize = "正常"
+			HorzAlign = "Left"
+			VertAlign = "Centre"/>
+		<Element
+			CID = "12"
+			Type = "EditBox"
+			X = "336"
+			Y = "145"
+			Width = "120"
+			Height = "21"
+			Flags = "2"
+			Text = "一干管理处"
+			IsDisabled = "0"
+			IsReadOnly = "0"
+			HorzAlign = "Left"/>
+		<Element
+			CID = "13"
+			Type = "StaticText"
+			X = "236"
+			Y = "180"
+			Width = "100"
+			Height = "21"
+			Flags = "0"
+			FillColour = "174,168,217,0,16"
+			TextColour = "0,0,0,0,19"
+			Text = "备注:"
+			FontAttributes = "0"
+			IsDisabled = "0"
+			Fill = "None"
+			TextSize = "正常"
+			HorzAlign = "Left"
+			VertAlign = "Centre"/>
+		<Element
+			CID = "14"
+			Type = "EditBoxMultiLine"
+			X = "336"
+			Y = "186"
+			Width = "121"
+			Height = "70"
+			Flags = "0"
+			IsDisabled = "0"
+			IsReadOnly = "0"
+			HasHorzScrollBar = "0"
+			HasVertScrollBar = "0"
+			WordWrap = "0"
+			HorzOffset = "0"
+			FirstVisibleLine = "1"
+			HorzAlign = "Left">
+			备注信息
+		</Element>
+		<Element
+			CID = "15"
+			Type = "TextButton"
+			X = "358"
+			Y = "322"
+			Width = "75"
+			Height = "23"
+			Flags = "0"
+			TextColour = "0,0,0,0,19"
+			Text = "确定"
+			TextSize = "正常"
+			FontAttributes = "0"
+			Depth = "2"
+			IsDefault = "1"
+			IsDisabled = "0"
+			MarginLeft = "0"
+			MarginRight = "0"
+			MarginTop = "0"
+			MarginBottom = "0"
+			AutoNavType = "Accept"/>
+		<Element
+			CID = "16"
+			Type = "TextButton"
+			X = "440"
+			Y = "322"
+			Width = "75"
+			Height = "23"
+			Flags = "0"
+			TextColour = "0,0,0,0,19"
+			Text = "取消"
+			TextSize = "正常"
+			FontAttributes = "0"
+			Depth = "2"
+			IsDefault = "0"
+			IsDisabled = "0"
+			MarginLeft = "0"
+			MarginRight = "0"
+			MarginTop = "0"
+			MarginBottom = "0"
+			AutoNavType = "Cancel"/>
+	</Elements>
+	<Connections
+		CID = "2"/>
+	<Notes
+		CID = "3"
+		NextCID = "2">
+		<Note
+			CID = "1"
+			Name = "Description">
+			
+		</Note>
+	</Notes>
+</Screen>

@@ -1,0 +1,28 @@
+冶河信息发布平台
+------------------------------------------------------------------------------------------
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : LLSM-SERVER2
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Unknown
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter 本地连接:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : HP NC373i Multifunction Gigabit Server Adapter
+   Physical Address. . . . . . . . . : 00-24-81-DF-CE-8A
+   DHCP Enabled. . . . . . . . . . . : No
+   IP Address. . . . . . . . . . . . : 192.168.2.110
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.2.1
+   DNS Servers . . . . . . . . . . . : 211.138.13.66
+                                       211.136.17.107
+
+Ethernet adapter 本地连接 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Description . . . . . . . . . . . : HP NC373i Multifunction Gigabit Server Adapter #2
+   Physical Address. . . . . . . . . : 00-24-81-DF-CE-8C

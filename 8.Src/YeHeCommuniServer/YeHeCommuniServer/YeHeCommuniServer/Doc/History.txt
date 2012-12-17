@@ -1,0 +1,38 @@
+﻿v1.14.0.0		2012-07-19 
+	update xdgk.common to v.0.8.5.0 : replace csdbi.instance with class property
+	
+v1.13.1.0		2012-05-02
+	remve device class assoc from formula
+	
+v1.12.0.0		2012-03-29
+	add Log10 function to Formula
+	
+v1.11.0.0		2011-11-23
+	add flux formula
+	
+v1.9.0.0		2011-05-12
+    modify xd202(xd2102)
+    
+v1.8.0.0
+	add write record save timespan
+	
+v1.7.0.0		2011-04-19
+    fixed record datetime
+
+v1.6.0.0		2011-04-15
+	add xd2300 read record 
+	
+v1.5.0.0		2011-04-14
+	add xd2300 down device command
+	
+v1.4.0.0		2011-04-14
+    add xd2300 device
+
+v1.0.3.0		2010-08-16
+    add xd202
+
+v1.0.2.0
+    add xd221modbus realdata, usedAmount
+
+v1.0.1.0
+    add xd221 voltage

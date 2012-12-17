@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<devicedefines>
+  <devicedefine >
+    <devicetype>vdevicetype</devicetype>
+    <operadefines>
+      <operadefine>
+        <name>operaname</name>
+        <sendpart>
+          <datafield>
+            <datafieldname>read</datafieldname>
+            <begin>0</begin>
+            <length>12</length>
+            <converter>Xdgk.Communi.OriginalConverter</converter>
+            <crc>false</crc>
+          </datafield>
+        </sendpart>
+        <receivepart>
+          <datafield>
+            <datafieldname>readreturn</datafieldname>
+            <begin>0</begin>
+            <length>1</length>
+            <converter>Xdgk.Communi.OriginalConverter</converter>
+          </datafield>
+        </receivepart>
+      </operadefine>
+    </operadefines>
+  </devicedefine>
+</devicedefines>

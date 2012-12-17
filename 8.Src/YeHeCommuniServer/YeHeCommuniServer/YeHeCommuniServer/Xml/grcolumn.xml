@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<columns>
+    <column name="no" headertext="序号" formatstring="" visible="true" dataname="no" typecode="Int32"/>
+    <column name="street" headertext="街道" formatstring="" visible="true" dataname="street" typecode ="String"/>
+    <column name="name" headertext="站名" formatstring="" visible="true" dataname="name" typecode ="String"/>
+    <column name="dt" headertext="时间" formatstring="" visible="true" dataname="dt" typecode="DateTime"/>
+
+    <column name="gt1" headertext="一次供温" formatstring="" visible="true" dataname="gt1" typecode="Single">
+        <celldisplay min="0" max="10" foreback="fore" normalcolor="000000" exceptioncolor="ff0000"/>
+    </column>
+
+    <column name="bt1" headertext="一次回温" formatstring="" visible="true" dataname="bt1" typecode="Single">
+    </column>
+    <column name="difft1" headertext="一次温差" formatstring="" visible="true" dataname="difft1" typecode="Single"/>
+
+    <column name="gt2" headertext="二次供温" formatstring="" visible="true" dataname="gt2" typecode="Single">
+    </column>
+
+    <column name="bt2" headertext="二次回温" formatstring="" visible="true" dataname="bt2" typecode="Single">
+    </column>
+    <column name="difft2" headertext="二次温差" formatstring="" visible="true" dataname="difft2" typecode="Single"/>
+    <column name="diffbt1gt2" headertext="一回二供温差" formatstring="" visible="false" dataname="diffbt1gt2" typecode="Single"/>
+    
+    <column name="gp1" headertext="一次供压" formatstring="" visible="true" dataname="gp1" typecode="Single"/>
+    <column name="bp1" headertext="一次回压" formatstring="" visible="true" dataname="bp1" typecode="Single"/>
+    <column name="diffp1" headertext="一次压差" formatstring="" visible="true" dataname="diffp1" typecode="Single"/>
+    
+    
+    <column name="gp2" headertext="二次供压" formatstring="" visible="true" dataname="gp2" typecode="Single"/>
+    <column name="bp2" headertext="二次回压" formatstring="" visible="true" dataname="bp2" typecode="Single"/>
+    <column name="diffp2" headertext="二次压差" formatstring="" visible="true" dataname="diffp2" typecode="Single"/>
+    
+    
+    <column name="i1" headertext="一次瞬时流量" formatstring="" visible="true" dataname="i1" typecode="Single"/>
+    <column name="s1" headertext="一次累计流量" formatstring="" visible="true" dataname="s1" typecode="Int32"/>
+
+    <column name="cm1" headertext="循环泵1" formatstring="" visible="true" dataname="cm1" typecode="Boolean"/>
+    <column name="cm2" headertext="循环泵2" formatstring="" visible="true" dataname="cm2" typecode="Boolean"/>
+    <column name="rm1" headertext="补水泵1" formatstring="" visible="true" dataname="rm1" typecode="Boolean"/>
+    <column name="rm2" headertext="补水泵2" formatstring="" visible="true" dataname="rm2" typecode="Boolean"/>
+    <column name="state" headertext="状态" formatstring="" visible="true" dataname="state" typecode="String"/>
+</columns>

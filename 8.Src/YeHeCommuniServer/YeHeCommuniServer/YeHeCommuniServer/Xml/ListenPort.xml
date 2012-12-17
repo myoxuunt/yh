@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<listenports>
+  <listenport>9001</listenport>
+  <listenport>9002</listenport>
+  <listenport>5000</listenport>
+</listenports>

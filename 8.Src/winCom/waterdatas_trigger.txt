@@ -1,0 +1,58 @@
+CREATE trigger tr_expData
+on waterdatas
+after insert
+as 
+    declare @watNo nvarchar(50)
+    declare @name nvarchar(50)
+    declare @allBuyAmount decimal(18,1) 
+    declare @leftAmount decimal(18,1)   
+    declare @iniAmount decimal(18,1)
+    declare @allAmount decimal(18,1)
+    declare @amount decimal(18,1)
+    declare @waterLevel decimal(18,1)
+    declare @bengState nvarchar(10)
+    declare @allowState nvarchar(10)
+    declare @exp nvarchar(1000)
+    declare @time datetime
+    declare @warnState nvarchar(500)
+    declare @allMony decimal(18,1)
+    declare @leftMony decimal(18,1)
+    declare @iCount int
+begin
+	select @watNo=watNo,@name=name,@allBuyAmount=allBuyAmount,
+	       @leftAmount=leftAmount,@iniAmount=iniAmount,@allAmount=allAmount,
+	       @amount=amount,@waterLevel=waterLevel,@bengState=bengState,
+	       @allowState=allowState,@exp=exp,@time=time,
+	       @warnState=warnState,@allMony=allMony,@leftMony=leftMony
+	       from inserted
+	       
+	delete from waterdataslast where watNo=@watNo	
+	insert into waterdataslast 
+	select * from inserted
+	
+	delete from waterdatasday where watNo=@watNo and convert(nvarchar(10),time,121)=convert(nvarchar(10),@time,121) and watNo=@watNo
+	insert into waterdatasday 
+	select * from inserted
+	
+	declare @timeTemp nvarchar(19)
+	select @timeTemp=convert(nvarchar(19),max(time),121) from waterdatasmonth where watNo=@watNo and convert(nvarchar(7),time,121)=convert(nvarchar(7),@time,121)
+	
+	if not @timeTemp is null
+	begin
+                                        select @iCount=count(*)  from waterdatasmonth where watNo=@watNo and convert(nvarchar(7),time,121)=convert(nvarchar(7),@time,121)
+			if @iCount=2
+			begin
+				  print @timeTemp
+				  delete from waterdatasmonth where watNo=@watNo and convert(nvarchar(19),time,121)=convert(nvarchar(19),@timeTemp,121)
+			end
+                                      
+	end
+	
+	insert into waterdatasmonth
+	select * from inserted
+	
+	
+	
+end
+
+

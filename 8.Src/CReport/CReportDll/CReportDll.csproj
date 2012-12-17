@@ -1,0 +1,356 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{E486D76B-7AFC-4E08-9CDF-21E5B8F017C6}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "CReportDll"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "CReportDll"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "D:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "D:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "D:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Shared"
+                    AssemblyName = "CrystalDecisions.Shared"
+                    HintPath = "D:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Shared.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.ReportSource"
+                    AssemblyName = "CrystalDecisions.ReportSource"
+                    HintPath = "D:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.ReportSource.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.CrystalReports.Engine"
+                    AssemblyName = "CrystalDecisions.CrystalReports.Engine"
+                    HintPath = "D:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.CrystalReports.Engine.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "D:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "D:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Windows.Forms"
+                    AssemblyName = "CrystalDecisions.Windows.Forms"
+                    HintPath = "D:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Windows.Forms.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                    HintPath = "D:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Web.Services.dll"
+                />
+                <Reference
+                    Name = "ZedGraph"
+                    AssemblyName = "ZedGraph"
+                    HintPath = "..\..\..\软件备份\软件开发版\IC售水\服务器\wellMana\crc16\bin\ZedGraph.dll"
+                />
+                <Reference
+                    Name = "cSaveErr"
+                    AssemblyName = "cSaveErr"
+                    HintPath = "..\..\cSaveErr\cSaveErr\bin\Debug\cSaveErr.dll"
+                />
+                <Reference
+                    Name = "crc16"
+                    AssemblyName = "crc16"
+                    HintPath = "..\crc16\bin\crc16.dll"
+                />
+                <Reference
+                    Name = "CBeep"
+                    AssemblyName = "CBeep"
+                    HintPath = "bin\Debug\CBeep.dll"
+                />
+                <Reference
+                    Name = "ComP"
+                    AssemblyName = "ComP"
+                    HintPath = "..\..\v2.1\ComPro\ComP\bin\Debug\ComP.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Class1.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CReadText.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CReadText.resx"
+                    DependentUpon = "CReadText.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PrintInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\CChart.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\CReports.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\CSalReport.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\CTools.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <Folder RelPath = "comReport\5\" />
+                <Folder RelPath = "comReport\9\" />
+                <Folder RelPath = "comReport\crp\8\" />
+                <File
+                    RelPath = "comReport\newRep\cDealReport.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\newRep\CGrid.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\newRep\cNumText.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\newRep\cNumText.resx"
+                    DependentUpon = "cNumText.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "comReport\newRep\cPrint.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmChart.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmChart.resx"
+                    DependentUpon = "frmChart.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmMonthStac.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmMonthStac.resx"
+                    DependentUpon = "frmMonthStac.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmMonthStacYear.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmMonthStacYear.resx"
+                    DependentUpon = "frmMonthStacYear.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmPrint.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmPrint.resx"
+                    DependentUpon = "frmPrint.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmRepDep.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmRepDep.resx"
+                    DependentUpon = "frmRepDep.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmReport.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmReport.resx"
+                    DependentUpon = "frmReport.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmSalReport.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmSalReport.resx"
+                    DependentUpon = "frmSalReport.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmSalReportDep.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\newRep\frmSalReportDep.resx"
+                    DependentUpon = "frmSalReportDep.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "comReport\newRep\printYear.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\newRep\printYear.resx"
+                    DependentUpon = "printYear.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <Folder RelPath = "comReport\newRep\saveErr\" />
+                <File
+                    RelPath = "comReport\zedGraph\CmyPaintChart.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\zedGraph\DateAxisSampleDemo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\zedGraph\DemoBase.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\zedGraph\DemoType.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\zedGraph\frmSrChart.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "comReport\zedGraph\frmSrChart.resx"
+                    DependentUpon = "frmSrChart.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "comReport\zedGraph\ZedGraphDemo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+        <StartupServices>
+            <Service ID = "{CF845C55-C321-4742-B673-E6212D061ED9}" />
+        </StartupServices>
+    </CSHARP>
+</VisualStudioProject>
+

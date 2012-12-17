@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winRep", "winRep.csproj", "{BBBC00D1-8CBC-44A5-ABA4-77ECA58535FE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CReportDll", "..\CReportDll\CReportDll.csproj", "{E486D76B-7AFC-4E08-9CDF-21E5B8F017C6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{BBBC00D1-8CBC-44A5-ABA4-77ECA58535FE}.Debug.ActiveCfg = Debug|.NET
+		{BBBC00D1-8CBC-44A5-ABA4-77ECA58535FE}.Debug.Build.0 = Debug|.NET
+		{BBBC00D1-8CBC-44A5-ABA4-77ECA58535FE}.Release.ActiveCfg = Release|.NET
+		{BBBC00D1-8CBC-44A5-ABA4-77ECA58535FE}.Release.Build.0 = Release|.NET
+		{E486D76B-7AFC-4E08-9CDF-21E5B8F017C6}.Debug.ActiveCfg = Debug|.NET
+		{E486D76B-7AFC-4E08-9CDF-21E5B8F017C6}.Debug.Build.0 = Debug|.NET
+		{E486D76B-7AFC-4E08-9CDF-21E5B8F017C6}.Release.ActiveCfg = Release|.NET
+		{E486D76B-7AFC-4E08-9CDF-21E5B8F017C6}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

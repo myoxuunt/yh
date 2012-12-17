@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34919A7B-E237-4412-90B0-6BB2D4DCBF8E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xdgk.Common</RootNamespace>
+    <AssemblyName>Xdgk.Common</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cccc.cs" />
+    <Compile Include="CodeFile1.cs" />
+    <Compile Include="DateTimeHelper.cs" />
+    <Compile Include="DisplayValue.cs" />
+    <Compile Include="DisplayValueCollection.cs" />
+    <Compile Include="FixedDialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FixedDialogBase.Designer.cs">
+      <DependentUpon>FixedDialogBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RangeConstraint.cs" />
+    <Compile Include="Constraint.cs" />
+    <Compile Include="DBIBase.cs" />
+    <Compile Include="DBInfo.cs" />
+    <Compile Include="Decorator.cs" />
+    <Compile Include="Enum.cs" />
+    <Compile Include="FileEncryptor.cs" />
+    <Compile Include="COPYDATASTRUCT.cs" />
+    <Compile Include="JMSoftware.Widgets\BaseWidget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BytesValueComparer.cs" />
+    <Compile Include="CommandLineOptions.cs" />
+    <Compile Include="HexStringConverter.cs" />
+    <Compile Include="NameValue.cs" />
+    <Compile Include="NameValueCollection.cs" />
+    <Compile Include="NUnit\AssemblyHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BytesConverter.cs" />
+    <Compile Include="Collection.cs" />
+    <Compile Include="Diagnostics.cs" />
+    <Compile Include="ExceptionHandler.cs" />
+    <Compile Include="NUnit\InternalTrace.cs" />
+    <Compile Include="NUnit\InternalTraceWriter.cs" />
+    <Compile Include="NUnit\Logger.cs" />
+    <Compile Include="NUnit\NTrace.cs" />
+    <Compile Include="ObjectBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelfSerializer.cs" />
+    <Compile Include="SerializableFont.cs" />
+    <Compile Include="SerializableColor.cs" />
+    <Compile Include="SettingsDialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StringHelper.cs" />
+    <Compile Include="UserMessage.cs" />
+    <Compile Include="WaitCursor.cs" />
+    <Compile Include="XmlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FixedDialogBase.resx">
+      <DependentUpon>FixedDialogBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JMSoftware.Widgets\BaseWidget.resx">
+      <DependentUpon>BaseWidget.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsDialogBase.resx">
+      <DependentUpon>SettingsDialogBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xdgk.Communi.Interface\Xdgk.Communi.Interface.csproj">
+      <Project>{65166530-2CBD-4210-8BBB-76A00509D2D4}</Project>
+      <Name>Xdgk.Communi.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

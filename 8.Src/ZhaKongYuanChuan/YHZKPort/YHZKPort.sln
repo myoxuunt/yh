@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YHZKPort", "YHZKPort\YHZKPort.csproj", "{782CC540-8D76-48BB-8EF5-643152BF477D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "YHZKPortSetup", "YHZKPortSetup\YHZKPortSetup.vdproj", "{15B848BF-AA9E-4954-989E-DDBB80A8126D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{782CC540-8D76-48BB-8EF5-643152BF477D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782CC540-8D76-48BB-8EF5-643152BF477D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782CC540-8D76-48BB-8EF5-643152BF477D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782CC540-8D76-48BB-8EF5-643152BF477D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B848BF-AA9E-4954-989E-DDBB80A8126D}.Debug|Any CPU.ActiveCfg = Debug
+		{15B848BF-AA9E-4954-989E-DDBB80A8126D}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

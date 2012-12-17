@@ -1,0 +1,340 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{BBBC00D1-8CBC-44A5-ABA4-77ECA58535FE}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "winRep"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "winRep"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "D:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "D:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "D:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "D:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "D:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "ZedGraph"
+                    AssemblyName = "ZedGraph"
+                    HintPath = "..\CReportDll\bin\Debug\ZedGraph.dll"
+                />
+                <Reference
+                    Name = "cFloatToValue"
+                    AssemblyName = "cFloatToValue"
+                    HintPath = "..\CReportDll\bin\Debug\cFloatToValue.dll"
+                />
+                <Reference
+                    Name = "Interop.MSCommLib"
+                    AssemblyName = "Interop.MSCommLib"
+                    HintPath = "..\CReportDll\bin\Debug\Interop.MSCommLib.dll"
+                />
+                <Reference
+                    Name = "LumiSoft.UI"
+                    AssemblyName = "LumiSoft.UI"
+                    HintPath = "..\CReportDll\bin\Debug\LumiSoft.UI.dll"
+                />
+                <Reference
+                    Name = "CBeep"
+                    AssemblyName = "CBeep"
+                    HintPath = "..\CReportDll\bin\Debug\CBeep.dll"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Shared"
+                    AssemblyName = "CrystalDecisions.Shared"
+                    HintPath = "D:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Shared.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.ReportSource"
+                    AssemblyName = "CrystalDecisions.ReportSource"
+                    HintPath = "D:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.ReportSource.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.CrystalReports.Engine"
+                    AssemblyName = "CrystalDecisions.CrystalReports.Engine"
+                    HintPath = "D:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.CrystalReports.Engine.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Windows.Forms"
+                    AssemblyName = "CrystalDecisions.Windows.Forms"
+                    HintPath = "D:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Windows.Forms.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                    HintPath = "D:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Web.Services.dll"
+                />
+                <Reference
+                    Name = "crc16"
+                    AssemblyName = "crc16"
+                    HintPath = "..\crc16\bin\crc16.dll"
+                />
+                <Reference
+                    Name = "ComP"
+                    AssemblyName = "ComP"
+                    HintPath = "..\..\v2.1\ComPro\ComP\bin\Debug\ComP.dll"
+                />
+                <Reference
+                    Name = "CReportDll"
+                    Project = "{E486D76B-7AFC-4E08-9CDF-21E5B8F017C6}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CMain.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Form1.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Form1.resx"
+                    DependentUpon = "Form1.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "bin\Debug\AxInterop.MSCommLib.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\bkData.xls"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\bkDataSave.xls"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\CBeep.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\cFloatToValue.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\columnName.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\ComP.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\count.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\crc16.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\datas.xls"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\eColName.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\Info.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\iniLsv.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\iniRepP.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\Interop.MSCommLib.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\log.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\LumiSoft.UI.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\report.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\repPrint.xml"
+                    Link = "..\..\wellMana\BengZhan\bin\debug\repPrint.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\salRep.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\salRepPrint.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\Server.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\startForm.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\tbTime.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "tbTime.cs"
+                />
+                <File
+                    RelPath = "bin\Debug\tbTime.cs"
+                    DependentUpon = "tbTime.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "bin\Debug\tbTime.xsx"
+                    DependentUpon = "tbTime.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\TextFile1.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\winRep.pdb"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\ZedGraph.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\dep\report.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\dep\repPrint.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\dep\salRep.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\dep\salRepPrint.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\dep\warn.xml"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+        <StartupServices>
+            <Service ID = "{CF845C55-C321-4742-B673-E6212D061ED9}" />
+        </StartupServices>
+    </CSHARP>
+</VisualStudioProject>
+

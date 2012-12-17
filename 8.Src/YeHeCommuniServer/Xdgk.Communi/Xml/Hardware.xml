@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hardware>
+  <stations>
+    <station>
+      <name>a station</name>
+      <communitype>
+        <name>socketcommunitype</name>
+        <socketcommunitype>
+          <ipaddress>192.0.0.1</ipaddress>
+          <port>1000</port>
+          <phonenumber>1234567890123</phonenumber>
+          <discriminatemode>ByIPAddress</discriminatemode>
+        </socketcommunitype>
+        <serialportcommunitype>
+        </serialportcommunitype>
+      </communitype>
+      <devices>
+        <device>
+          <devicetype>vdevicetype</devicetype>
+          <address>100</address>
+        </device>
+      </devices>
+    </station>
+  </stations>
+</hardware>

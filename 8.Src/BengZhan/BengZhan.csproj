@@ -1,0 +1,1018 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{58ECAFF5-FA73-47B9-8678-4BDB1BE32732}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "BengZhan"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "BengZhan"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.DirectoryServices"
+                    AssemblyName = "System.DirectoryServices"
+                    HintPath = "..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.DirectoryServices.dll"
+                />
+                <Reference
+                    Name = "MSCommLib"
+                    Guid = "{648A5603-2C6E-101B-82B6-000000000014}"
+                    VersionMajor = "1"
+                    VersionMinor = "1"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "AxMSCommLib"
+                    Guid = "{648A5603-2C6E-101B-82B6-000000000014}"
+                    VersionMajor = "1"
+                    VersionMinor = "1"
+                    Lcid = "0"
+                    WrapperTool = "aximp"
+                />
+                <Reference
+                    Name = "System.Runtime.Remoting"
+                    AssemblyName = "System.Runtime.Remoting"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Runtime.Remoting.dll"
+                />
+                <Reference
+                    Name = "ZedGraph"
+                    AssemblyName = "ZedGraph"
+                    HintPath = "bin\debug\ZedGraph.dll"
+                />
+                <Reference
+                    Name = "cSaveErr"
+                    AssemblyName = "cSaveErr"
+                    HintPath = "..\..\cSaveErr\cSaveErr\bin\Debug\cSaveErr.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "CWarnDll"
+                    AssemblyName = "CWarnDll"
+                    HintPath = "..\..\v2.1\ComPro\CWarnDll\bin\Debug\CWarnDll.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "crc16"
+                    AssemblyName = "crc16"
+                    HintPath = "..\..\CReport\crc16\bin\crc16.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "CExp"
+                    AssemblyName = "CExp"
+                    HintPath = "..\..\v2.1\ComPro\CExp\bin\Debug\CExp.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "CIC"
+                    AssemblyName = "CIC"
+                    HintPath = "..\..\frmIC\CIC\bin\Debug\CIC.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "MapGis"
+                    AssemblyName = "MapGis"
+                    HintPath = "bin\debug\MapGis.dll"
+                />
+                <Reference
+                    Name = "decApp"
+                    AssemblyName = "decApp"
+                    HintPath = "bin\debug\decApp.dll"
+                />
+                <Reference
+                    Name = "CDGPrintDll"
+                    AssemblyName = "CDGPrintDll"
+                    HintPath = "bin\debug\CDGPrintDll.dll"
+                />
+                <Reference
+                    Name = "myGisP"
+                    AssemblyName = "myGisP"
+                    HintPath = "bin\debug\myGisP.dll"
+                />
+                <Reference
+                    Name = "ComP"
+                    AssemblyName = "ComP"
+                    HintPath = "..\..\ju\BengZhan\bin\debug\ComP.dll"
+                />
+                <Reference
+                    Name = "cReport"
+                    AssemblyName = "cReport"
+                    HintPath = "bin\debug\cReport.dll"
+                />
+                <Reference
+                    Name = "CReportDll"
+                    Project = "{E486D76B-7AFC-4E08-9CDF-21E5B8F017C6}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "winCom"
+                    Project = "{9881FB55-8A6F-40CF-A7C1-72F0BBF4F105}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CM.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Form1.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Form1.resx"
+                    DependentUpon = "Form1.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frm1.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frm1.resx"
+                    DependentUpon = "frm1.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frm2.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frm2.resx"
+                    DependentUpon = "frm2.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmWaterSys.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmWaterSys.resx"
+                    DependentUpon = "frmWaterSys.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "abort\frmAbort.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "abort\frmAbort.resx"
+                    DependentUpon = "frmAbort.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "autoBackup\CAutoBackup.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "autoBackup\Form1.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "autoBackup\Form1.resx"
+                    DependentUpon = "Form1.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "baseInfo\country\frmAddCountry.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "baseInfo\country\frmAddCountry.resx"
+                    DependentUpon = "frmAddCountry.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "baseInfo\country\frmCountry.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "baseInfo\country\frmCountry.resx"
+                    DependentUpon = "frmCountry.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "baseInfo\town\frmAddTown.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "baseInfo\town\frmAddTown.resx"
+                    DependentUpon = "frmAddTown.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "baseInfo\town\frmTown.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "baseInfo\town\frmTown.resx"
+                    DependentUpon = "frmTown.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "bengzhans\frmAdvancedInfo.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "bengzhans\frmAdvancedInfo.resx"
+                    DependentUpon = "frmAdvancedInfo.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "bengzhans\frmBengZhanEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "bengzhans\frmBengZhanEdit.resx"
+                    DependentUpon = "frmBengZhanEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "bengzhans\frmBengZhans.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "bengzhans\frmBengZhans.resx"
+                    DependentUpon = "frmBengZhans.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "bengzhans\frmDataEditItems.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "bengzhans\frmDataEditItems.resx"
+                    DependentUpon = "frmDataEditItems.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "bengzhans\frmDatasEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "bengzhans\frmDatasEdit.resx"
+                    DependentUpon = "frmDatasEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "bengzhans\frmGLDatas.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "bengzhans\frmGLDatas.resx"
+                    DependentUpon = "frmGLDatas.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "bengzhans\frmZhan.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "bengzhans\frmZhan.resx"
+                    DependentUpon = "frmZhan.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "bin\debug\abort.bmp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\BengZhanCmd.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\Cmd.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\CmdEx.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\columnName.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\comInfo.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\count.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\datas.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\datasEx.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\delTable.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\detail.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\dgPrint.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\dingFeng.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\dsPrint.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsPrint.cs"
+                />
+                <File
+                    RelPath = "bin\debug\dsPrint.cs"
+                    DependentUpon = "dsPrint.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "bin\debug\dsPrint.xsx"
+                    DependentUpon = "dsPrint.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\debug\dsReport.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsReport.cs"
+                />
+                <File
+                    RelPath = "bin\debug\dsReport.cs"
+                    DependentUpon = "dsReport.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "bin\debug\dsReport.xsx"
+                    DependentUpon = "dsReport.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\debug\EARTH.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\explain.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\farCmd.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\frmSetWarnLev.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "bin\debug\frmSetWarnLev.resx"
+                    DependentUpon = "frmSetWarnLev.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "bin\debug\heatCmd.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\help.chm"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\debug\IC.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\ICGrid.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\ICGridPrint.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\Info.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\iniLsv.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\iniRepP.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\killCon.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\log.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\PrintFields.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\PrintFieldsEx.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\printFieldsOther.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\printWarnTb.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\pSet.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\PSIC.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\PSICExp.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\readme.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\remoting.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\report.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\repPrint.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\revCmds.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\salRep.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\salRepPrint.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\Server.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\sysForm.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\timer.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\upSqls.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\warnTb.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\waterCmd.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\WellInfo.xml"
+                    BuildAction = "Content"
+                />
+                <Folder RelPath = "bin\debug\crc16\" />
+                <File
+                    RelPath = "bin\debug\database\原始数据\initialData.bak"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\debug\dep\report.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\dep\repPrint.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\dep\salRep.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\dep\salRepPrint.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\dep\warn.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\icSys\icSys.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\ini\sysIni.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\newDoc\subZ.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\newDoc\warnZ.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\setParam\BengZhanCmd.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\setParam\docType.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\setParam\read.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\setParam\timerMap.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\socket\soc.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\sqls\sqls.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\sqls\sqlzuo.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\sqls\TextFile1.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\sqls\TextFile2.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\sqls\upSql1.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\sqls\upSql10.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\sqls\upSql2.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\sysInfo\sysInfo.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\timerMap\timerMap.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\timers\timerSys.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\debug\waterSys\waterSysField.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "com\frmMain.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "com\frmMain.resx"
+                    DependentUpon = "frmMain.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "controls\myCmb.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "controls\myCmb.resx"
+                    DependentUpon = "myCmb.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "cReport\CCrystalReport.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "database\frmBackRestoreDB.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "database\frmBackRestoreDB.resx"
+                    DependentUpon = "frmBackRestoreDB.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "database\frmIniDB.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "database\frmIniDB.resx"
+                    DependentUpon = "frmIniDB.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "database\frmSetServices.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "database\frmSetServices.resx"
+                    DependentUpon = "frmSetServices.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "database\frmSysSet.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "database\frmSysSet.resx"
+                    DependentUpon = "frmSysSet.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "deps\frmSalZhans.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "deps\frmSalZhans.resx"
+                    DependentUpon = "frmSalZhans.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "deps\frmSalZhansEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "deps\frmSalZhansEdit.resx"
+                    DependentUpon = "frmSalZhansEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "deps\未用窗体\frmDep.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "deps\未用窗体\frmDep.resx"
+                    DependentUpon = "frmDep.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "deps\未用窗体\frmDepEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "deps\未用窗体\frmDepEdit.resx"
+                    DependentUpon = "frmDepEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "error\frmError.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "error\frmError.resx"
+                    DependentUpon = "frmError.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "gprsMana\frmWellMana.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "gprsMana\frmWellMana.resx"
+                    DependentUpon = "frmWellMana.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "hangYe\frmHangYeAdd.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "hangYe\frmHangYeAdd.resx"
+                    DependentUpon = "frmHangYeAdd.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "hangYe\frmHangYeType.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "hangYe\frmHangYeType.resx"
+                    DependentUpon = "frmHangYeType.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "hangYe\frmPrice.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "hangYe\frmPrice.resx"
+                    DependentUpon = "frmPrice.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "hangYe\icSal\CGetPwd.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "hangYe\icSal\cIC.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "hangYe\icSal\cSetParam.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "hangYe\icSal\frmICSal.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "hangYe\icSal\frmICSal.resx"
+                    DependentUpon = "frmICSal.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "hangYe\icSal\frmIniCard.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "hangYe\icSal\frmIniCard.resx"
+                    DependentUpon = "frmIniCard.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <Folder RelPath = "printDoc\" />
+                <Folder RelPath = "reports\" />
+                <Folder RelPath = "salWaterRep\" />
+                <Folder RelPath = "salZhans\" />
+                <File
+                    RelPath = "sysWarn\CSysWarn.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "tools\CDBConnection.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "tools\CInsertMenu.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "tools\CPaintDepTrv.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Users\frmAdd.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Users\frmAdd.resx"
+                    DependentUpon = "frmAdd.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Users\FrmChangePwd.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Users\FrmChangePwd.resx"
+                    DependentUpon = "FrmChangePwd.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Users\FrmMenuMana.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Users\FrmMenuMana.resx"
+                    DependentUpon = "FrmMenuMana.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Users\frmUsers.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Users\frmUsers.resx"
+                    DependentUpon = "frmUsers.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "warn\frmWarnLevel.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "warn\frmWarnLevel.resx"
+                    DependentUpon = "frmWarnLevel.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "warn\onTimeSet\frmOnTimeSet.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "warn\onTimeSet\frmOnTimeSet.resx"
+                    DependentUpon = "frmOnTimeSet.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "warn\onTimeSet\frmTime.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "warn\onTimeSet\frmTime.resx"
+                    DependentUpon = "frmTime.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+        <StartupServices>
+            <Service ID = "{CF845C55-C321-4742-B673-E6212D061ED9}" />
+        </StartupServices>
+    </CSHARP>
+</VisualStudioProject>
+

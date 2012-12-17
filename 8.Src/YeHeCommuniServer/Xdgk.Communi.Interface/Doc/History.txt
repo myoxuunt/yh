@@ -1,0 +1,16 @@
+﻿//v0.0.2.0
+//2010-04-13
+//add DBIBase class
+
+v001.1
+modify ReverseWithLettleEndian
+
+v0010
+ibytesconverter add IsLittleEndian
+add bytesconverter class
+
+v0001
+add pumpstate
+
+v0002
+set pumpstate value

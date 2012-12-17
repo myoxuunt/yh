@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tasks>
+  <task>
+    <devicetype>vdevicetype</devicetype>
+    <operaname>operaname</operaname>
+    <strategytype>cyclestrategy</strategytype>
+    <cyclestrategy>
+      <value>00:00:10</value>
+    </cyclestrategy>
+  </task>
+</tasks>

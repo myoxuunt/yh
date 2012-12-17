@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hardware>
+  <stations>
+    <station>
+      <name>a station</name>
+      <communitype>
+        <name>socketcommunitype</name>
+        <socketcommunitype>
+          <ipaddress>127.0.0.1</ipaddress>
+          <localport>3417</localport>
+          <remoteport>0</remoteport>
+          <phonenumber>1234567890123</phonenumber>
+          <discriminatemode>ByIPAddressPort</discriminatemode>
+        </socketcommunitype>
+        <serialportcommunitype>
+        </serialportcommunitype>
+      </communitype>
+      <devices>
+        <device>
+          <devicetype>vdevicetype</devicetype>
+          <address>101</address>
+        </device>
+
+        <device>
+          <devicetype>vdevicetype</devicetype>
+          <address>102</address>
+        </device>
+
+        <device>
+          <devicetype>vdevicetype</devicetype>
+          <address>103</address>
+        </device>
+
+        <device>
+          <devicetype>vdevicetype</devicetype>
+          <address>104</address>
+        </device>
+      </devices>
+    </station>
+  </stations>
+</hardware>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetDescription">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDescriptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDescriptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSluiceDataLastDateTime">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSluiceDataLastDateTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetSluiceDataLastDateTimeResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSluiceData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="table">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSluiceDataResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetDescriptionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDescription" />
+  </wsdl:message>
+  <wsdl:message name="GetDescriptionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSluiceDataLastDateTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSluiceDataLastDateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetSluiceDataLastDateTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSluiceDataLastDateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertSluiceDataSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertSluiceData" />
+  </wsdl:message>
+  <wsdl:message name="InsertSluiceDataSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertSluiceDataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="GetDescription">
+      <wsdl:input message="tns:GetDescriptionSoapIn" />
+      <wsdl:output message="tns:GetDescriptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSluiceDataLastDateTime">
+      <wsdl:input message="tns:GetSluiceDataLastDateTimeSoapIn" />
+      <wsdl:output message="tns:GetSluiceDataLastDateTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSluiceData">
+      <wsdl:input message="tns:InsertSluiceDataSoapIn" />
+      <wsdl:output message="tns:InsertSluiceDataSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDescription">
+      <soap:operation soapAction="http://tempuri.org/GetDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSluiceDataLastDateTime">
+      <soap:operation soapAction="http://tempuri.org/GetSluiceDataLastDateTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSluiceData">
+      <soap:operation soapAction="http://tempuri.org/InsertSluiceData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDescription">
+      <soap12:operation soapAction="http://tempuri.org/GetDescription" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSluiceDataLastDateTime">
+      <soap12:operation soapAction="http://tempuri.org/GetSluiceDataLastDateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSluiceData">
+      <soap12:operation soapAction="http://tempuri.org/InsertSluiceData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://localhost:2023/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://localhost:2023/Service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

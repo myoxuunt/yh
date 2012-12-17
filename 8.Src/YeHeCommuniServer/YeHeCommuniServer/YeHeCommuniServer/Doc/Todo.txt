@@ -1,0 +1,10 @@
+﻿1. add device icon for treeView
+2. 状态显示功能
+3. 设备数据详细显示
+4. 设备数据更新时，相关显示
+5. 报警数据显示
+6. 数据到达存盘
+7. same station name 
+8. read usedAmount form xd221modbus
+9. hd heartdata + realdata
+10. 宏电DTU心跳和数据连在一起时候,提取实时数据

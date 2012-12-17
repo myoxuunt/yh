@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C37DCAB-363D-4338-BB38-528E7E0EAA64}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YeHeCommuniServer</RootNamespace>
+    <AssemblyName>YeHeCommuniServer</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ciloci.Flee, Version=0.9.26.0, Culture=neutral, PublicKeyToken=c8526a021ef298ed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\GlobalAssembly\Flee\Ciloci.Flee.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\GlobalAssembly\NLog\.NET Framework 2.0\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xdgk.Common, Version=0.8.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\GlobalAssembly\Xdgk.Common\Xdgk.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Xdgk.Communi, Version=0.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\GlobalAssembly\Xdgk.Communi\Xdgk.Communi.dll</HintPath>
+    </Reference>
+    <Reference Include="Xdgk.Communi.Interface, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\GlobalAssembly\Xdgk.Communi.Interface\Xdgk.Communi.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Xdgk.Communi.XD2300Converter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\GlobalAssembly\Xdgk.Communi.XD2300Converter\Xdgk.Communi.XD2300Converter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommuniServerApp.cs" />
+    <Compile Include="CommuniSoftEventsRegister.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="CSDBI.cs" />
+    <Compile Include="DBHardWareBuilder.cs" />
+    <Compile Include="DB\DitchData.cs" />
+    <Compile Include="DB\FormulaDB.cs" />
+    <Compile Include="DB\MeasureSluiceData.cs" />
+    <Compile Include="DeviceDefineConst.cs" />
+    <Compile Include="DeviceFactory.cs" />
+    <Compile Include="DitchData.cs" />
+    <Compile Include="DitchDataCache.cs" />
+    <Compile Include="DitchDevice.cs" />
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddinManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddinManager.Designer.cs">
+      <DependentUpon>frmAddinManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeviceItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeviceItem.Designer.cs">
+      <DependentUpon>frmDeviceItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeviceSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeviceSelect.Designer.cs">
+      <DependentUpon>frmDeviceSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModbusParameterSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModbusParameterSetting.Designer.cs">
+      <DependentUpon>frmModbusParameterSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStationItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStationItem.Designer.cs">
+      <DependentUpon>frmStationItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTaskDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaskDetail.Designer.cs">
+      <DependentUpon>frmTaskDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTaskManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaskManage.Designer.cs">
+      <DependentUpon>frmTaskManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXD221Params.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXD221Params.Designer.cs">
+      <DependentUpon>frmXD221Params.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddinManager.resx">
+      <DependentUpon>frmAddinManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeviceItem.resx">
+      <DependentUpon>frmDeviceItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeviceSelect.resx">
+      <DependentUpon>frmDeviceSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModbusParameterSetting.resx">
+      <DependentUpon>frmModbusParameterSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStationItem.resx">
+      <DependentUpon>frmStationItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTaskDetail.resx">
+      <DependentUpon>frmTaskDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTaskManage.resx">
+      <DependentUpon>frmTaskManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXD221Params.resx">
+      <DependentUpon>frmXD221Params.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>strings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDitchDevice.resx">
+      <DependentUpon>UCDitchDevice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCXD202Device.resx">
+      <DependentUpon>UCXD202Device.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaterStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WaterStrings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ResourceManager.cs" />
+    <Compile Include="StationDiscriminateMode.cs" />
+    <Compile Include="strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UCDitchDevice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDitchDevice.Designer.cs">
+      <DependentUpon>UCDitchDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCXD202Device.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCXD202Device.Designer.cs">
+      <DependentUpon>UCXD202Device.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaterStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WaterStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WeirType.cs" />
+    <Compile Include="XD202Data.cs" />
+    <Compile Include="XD202Device.cs" />
+    <Compile Include="XD202Processor.cs" />
+    <Compile Include="XD221ConfigDefine.cs" />
+    <Compile Include="XD221ConfigDefineCollection.cs" />
+    <Compile Include="XD221ConfigItem.cs" />
+    <Compile Include="XD221Device.cs" />
+    <Compile Include="XD221ModbusParamConfig.cs" />
+    <Compile Include="XD221ModbusParamConverter.cs" />
+    <Compile Include="XD221ModbusProcessor.cs" />
+    <Compile Include="XD221Params.cs" />
+    <Compile Include="XD221Processor.cs" />
+    <Compile Include="XD2300Device.cs" />
+    <Compile Include="XD2300Processor.cs" />
+    <Compile Include="YeHeProcessor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Doc\Function.txt" />
+    <Content Include="Doc\History.txt" />
+    <Content Include="Doc\Todo.txt" />
+    <Content Include="Res\Connect.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Res\Device.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Res\DisConnect.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Res\Empty.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\devicedefine.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\ListenPort.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\Task.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\YeHeCSConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xdgk.CF\Xdgk.CF.csproj">
+      <Project>{FE0A10BB-2992-4368-B4C5-518D80718B60}</Project>
+      <Name>Xdgk.CF</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

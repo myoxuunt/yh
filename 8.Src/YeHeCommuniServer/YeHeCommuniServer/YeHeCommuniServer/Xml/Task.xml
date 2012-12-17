@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tasks>
+  <task>
+    <devicetype>XD221Modbus</devicetype>
+    <operaname>ReadReal</operaname>
+    <strategytype>cyclestrategy</strategytype>
+    <cyclestrategy>
+      <value>00:01:00</value>
+    </cyclestrategy>
+  </task>
+  
+  <task>
+    <devicetype>XD221Modbus</devicetype>
+    <operaname>ReadUsedAmount</operaname>
+    <strategytype>cyclestrategy</strategytype>
+    <cyclestrategy>
+      <value>00:01:00</value>
+    </cyclestrategy>
+  </task>
+  
+  <task>
+      <devicetype>xd221</devicetype>
+      <operaname>readreal</operaname>
+      <strategytype>cyclestrategy</strategytype>
+      <cyclestrategy>
+          <value>00:01:00</value>
+      </cyclestrategy>
+  </task>
+  
+  <task>
+    <devicetype>xd202</devicetype>
+    <operaname>ReadReal</operaname>
+    <strategytype>cyclestrategy</strategytype>
+    <cyclestrategy>
+      <value>00:01:00</value>
+    </cyclestrategy>
+  </task>
+
+  <task>
+    <devicetype>xd2300</devicetype>
+    <!--
+    <operaname>ReadReal</operaname>
+    -->
+    <operaname>ReadRecordIndex</operaname>
+    <strategytype>cyclestrategy</strategytype>
+    <cyclestrategy>
+        <value>00:01:00</value>
+    </cyclestrategy>
+  </task>
+
+  <task>
+    <devicetype>xd2300</devicetype>
+    <!--
+    <operaname>ReadReal</operaname>
+    -->
+    <operaname>WriteRecordSaveTimeSpan</operaname>
+    <strategytype>cyclestrategy</strategytype>
+    <cyclestrategy>
+        <value>01:00:00</value>
+    </cyclestrategy>
+  </task>
+</tasks>

@@ -1,6 +1,10 @@
-﻿v1.3.0.0		2012-07-19		
-change instantflux data type
-fixed instantflux calc error when formual changed(use xdgk.cf v1.2) 
+﻿v1.4.0.0		2013-04-10
+	add ps6216 data transmit
+	config file in ps6216Import.xml file
+	
+v1.3.0.0		2012-07-19		
+	change instantflux data type
+	fixed instantflux calc error when formual changed(use xdgk.cf v1.2) 
 
 v1.1.0.0        2012-05-16
-cq water unit is M, transmit to yeshsldb is cm
+	cq water unit is M, transmit to yeshsldb is cm

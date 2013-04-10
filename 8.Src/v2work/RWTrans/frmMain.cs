@@ -10,6 +10,8 @@ namespace RWTrans
 {
     public partial class frmMain : Form
     {
+
+        private PS6216DataImporter.Importer _ps6216DataImporter;
         /// <summary>
         /// 
         /// </summary>
@@ -32,6 +34,12 @@ namespace RWTrans
                 );
 
             App.Default.Start();
+
+            //
+            //
+            _ps6216DataImporter = new PS6216DataImporter.Importer(App.Default.Logger);
+            _ps6216DataImporter.Start();
+
         }
 
         /// <summary>

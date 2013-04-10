@@ -70,7 +70,6 @@
     <Compile Include="Item.cs" />
     <Compile Include="ItemCollection.cs" />
     <Compile Include="ItemFactory.cs" />
-    <Compile Include="Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmFormulaManager.resx">
@@ -117,6 +116,16 @@
   <ItemGroup>
     <Content Include="Doc\History.txt" />
     <Content Include="Doc\Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Common\Common.csproj">
+      <Project>{0F064668-815F-4B67-A130-876221408E63}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="PS6216Trans\PS6216Trans.csproj">
+      <Project>{0D959031-E178-47C7-8D58-48EF46A613DD}</Project>
+      <Name>PS6216Trans</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

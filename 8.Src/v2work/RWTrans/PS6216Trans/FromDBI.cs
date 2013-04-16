@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Data.OleDb;
 using System.Data;
 using System.Collections.Generic;
@@ -8,10 +9,36 @@ namespace PS6216DataImporter
 {
     public class FromDBI 
     {
+        /// <summary>
+        /// 
+        /// </summary>
         private string _connstring;
-        public FromDBI(string connstring)
+
+        
+        #region TableNameOfFromDB
+        /// <summary>
+        /// 平升历史记录表名称
+        /// </summary>
+        public string TableNameOfFromDB
+        {
+            get { return _tableNameOfFromDB; }
+            set { _tableNameOfFromDB = value; }
+        } private string _tableNameOfFromDB;
+        #endregion //TableNameOfFromDB
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="connstring"></param>
+        public FromDBI(string connstring, string tableNameOfFromDB)
         {
             this._connstring = connstring;
+
+            if (string.IsNullOrEmpty(tableNameOfFromDB))
+            {
+                throw new ArgumentException("tablenameOfFromDB cannot is null or empty");
+            }
+            this._tableNameOfFromDB = tableNameOfFromDB;
         }
 
         /// <summary>
@@ -22,8 +49,10 @@ namespace PS6216DataImporter
         public DataTable ReadNewDataTable(DateTime fromDateTime)
         {
             string s = string.Format(
-                "SELECT * FROM [t_设备92记录表] WHERE (记录时间 > #{0}#)",
-                fromDateTime);
+                "SELECT * FROM [{0}] WHERE (记录时间 > #{1}#)",
+                this.TableNameOfFromDB,
+                fromDateTime
+                );
             return ExecuteDataTable(s);
         }
 

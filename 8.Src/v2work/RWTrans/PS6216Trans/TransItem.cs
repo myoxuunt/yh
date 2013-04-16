@@ -16,7 +16,6 @@ namespace PS6216DataImporter
             {
                 if (_fromDevice == null)
                 {
-                    _fromDevice = new FromDevice();
                 }
                 return _fromDevice;
             }

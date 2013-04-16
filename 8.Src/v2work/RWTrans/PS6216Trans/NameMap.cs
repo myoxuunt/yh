@@ -65,5 +65,24 @@ namespace PS6216DataImporter
         } private float _elvation;
         #endregion //Elvation
 
+        #region TotalHeight
+        /// <summary>
+        /// 总高度 / 超声波探头到渠底的距离 
+        /// 单位毫米(mm)
+        /// </summary>
+        public int TotalHeight
+        {
+            get
+            {
+                return _totalHeight;
+            }
+            set
+            {
+                _totalHeight = value;
+            }
+        } private int _totalHeight;
+        #endregion //TotalHeight
+
+
     }
 }

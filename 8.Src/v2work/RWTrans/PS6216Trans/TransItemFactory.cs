@@ -18,7 +18,7 @@ namespace PS6216DataImporter
         static public TransItem Create(NameMap nm, FromDBI fromDBI, ToDBI toDBI)
         {
             TransItem item = new TransItem();
-            item.FromDevice = CreateFromDevice(nm.FromName, fromDBI);
+            item.FromDevice = CreateFromDevice(nm.FromName, fromDBI, nm.TotalHeight);
             item.ToDevice = CreateToDevice(nm.ToName, toDBI, nm.Elvation);
             return item;
         }
@@ -28,9 +28,9 @@ namespace PS6216DataImporter
         /// </summary>
         /// <param deviceType="p"></param>
         /// <returns></returns>
-        private static FromDevice CreateFromDevice(string name, FromDBI fromDBI)
+        private static FromDevice CreateFromDevice(string name, FromDBI fromDBI, int totalHeight)
         {
-            FromDevice fd = new FromDevice();
+            FromDevice fd = new FromDevice(totalHeight);
             fd.DBI = fromDBI;
             //fd.Name = name;
             //fd.ID = fromDBI.ReadFromDeviceID(name);

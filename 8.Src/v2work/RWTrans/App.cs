@@ -307,8 +307,6 @@ namespace RWTrans
         } private Logger _logger;
         #endregion //Logger
 
-
-
         #region DevieFormaulCollectionMapCollection
         /// <summary>
         /// 

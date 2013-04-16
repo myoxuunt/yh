@@ -11,6 +11,7 @@ namespace PS6216DataImporter
 {
     public class ToDevice : DeviceBase
     {
+        
         /// <summary>
         /// 
         /// </summary>
@@ -75,9 +76,23 @@ namespace PS6216DataImporter
         private void WriteDataRow(DataRow row)
         {
             DateTime dt = Convert.ToDateTime(row["记录时间"]);
-            int wl = Convert.ToInt32(row["水位"]);
-            float instantFlux = 123f;// Convert.ToSingle(row[""]);
-            ((ToDBI)DBI).InsertDitchData(this.ID, dt, wl, instantFlux);
+            float wl = Convert.ToSingle(row["wl"]);
+            wl = MMToCM(wl);
+
+            float instantFlux = CalcInstantFlux(wl);
+
+            int intWL = Convert.ToInt32 ( wl );
+            ((ToDBI)DBI).InsertDitchData(this.ID, dt, intWL, instantFlux);
+        }
+
+        /// <summary>
+        ///  TODO:
+        /// </summary>
+        /// <param name="wl"></param>
+        /// <returns></returns>
+        private float CalcInstantFlux(float wl)
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>

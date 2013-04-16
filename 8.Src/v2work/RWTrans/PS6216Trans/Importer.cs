@@ -4,6 +4,8 @@ using System.Data;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
+using Xdgk.CF;
+using Common;
 
 namespace PS6216DataImporter
 {
@@ -22,6 +24,25 @@ namespace PS6216DataImporter
         public Importer(RWTrans.Logger logger)
         {
             _logger = logger;
+            InitDeviceFormaul();
+        }
+
+        private void InitDeviceFormaul()
+        {
+            if (!DeviceFormaulManager.IsInitPSFormaul )
+            {
+
+                DevieFormaulCollectionMapCollection _dfsmaps = DeviceFormaulManager.DevieFormaulCollectionMapCollection;
+                foreach (TransItem ti in this.TransItemCollection)
+                {
+                    ToDBI dbi = (ToDBI )ti.ToDevice.DBI ;
+                    DataTable fromulaTbl = dbi.GetFormulaDataTable(ti.ToDevice.ID);
+                    _dfsmaps.AddDevice(ti.ToDevice.ID, fromulaTbl.Rows);
+
+                    _dfsmaps[_dfsmaps.Count - 1].Tag = "noname(DATA6216)";
+                }
+                DeviceFormaulManager.IsInitPSFormaul = true;
+            }
         }
 
         private Timer Timer

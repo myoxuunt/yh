@@ -4,9 +4,9 @@ using System.Text;
 
 namespace PS6216DataImporter
 {
-    public class ToDBI : Xdgk.Common.DBIBase
+    public class ToDBIForPs : Common.ToDBI 
     {
-        public ToDBI(string connstring)
+        public ToDBIForPs(string connstring)
             : base(connstring)
         {
         }
@@ -88,7 +88,7 @@ namespace PS6216DataImporter
             int deviceID = ReadDeviceID(stationID);
             string s = string.Format("select Max(DT) from tblDitchData where DeviceID = '{0}'", deviceID);
             object obj = ExecuteScalar(s);
-            if (obj != null)
+            if (obj != null && obj != DBNull.Value)
             {
                 return Convert.ToDateTime(obj);
             }

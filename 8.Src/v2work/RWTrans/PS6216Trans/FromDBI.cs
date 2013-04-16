@@ -49,7 +49,7 @@ namespace PS6216DataImporter
         public DataTable ReadNewDataTable(DateTime fromDateTime)
         {
             string s = string.Format(
-                "SELECT * FROM [{0}] WHERE (记录时间 > #{1}#)",
+                "SELECT * FROM [{0}] WHERE (记录时间 > #{1}#) order by 记录时间",
                 this.TableNameOfFromDB,
                 fromDateTime
                 );

@@ -53,7 +53,6 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Config.cs" />
-    <Compile Include="Enums.cs" />
     <Compile Include="frmFormulaManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,7 +109,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>strings.resx</DependentUpon>
     </Compile>
-    <Compile Include="ToDBI.cs" />
     <Compile Include="WaterItem.cs" />
   </ItemGroup>
   <ItemGroup>

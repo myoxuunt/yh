@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Data ;
 using System.Data.SqlClient;
+using Common;
 
 
 namespace PS6216DataImporter
@@ -79,10 +80,10 @@ namespace PS6216DataImporter
             float wl = Convert.ToSingle(row["wl"]);
             wl = MMToCM(wl);
 
-            float instantFlux = CalcInstantFlux(wl);
+            float instantFlux = CalcInstantFlux(dt, wl);
 
             int intWL = Convert.ToInt32 ( wl );
-            ((ToDBI)DBI).InsertDitchData(this.ID, dt, intWL, instantFlux);
+            ((ToDBIForPs)DBI).InsertDitchData(this.ID, dt, intWL, instantFlux);
         }
 
         /// <summary>
@@ -90,9 +91,11 @@ namespace PS6216DataImporter
         /// </summary>
         /// <param name="wl"></param>
         /// <returns></returns>
-        private float CalcInstantFlux(float wl)
+        private float CalcInstantFlux(DateTime dt, float wl)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return DeviceFormaulManager.DevieFormaulCollectionMapCollection.CalcInstantFlux(this.ID, dt,
+                Convert.ToInt32(wl), 0);
         }
 
         /// <summary>
@@ -101,7 +104,7 @@ namespace PS6216DataImporter
         /// <returns></returns>
         public DateTime ReadLastDataDateTime()
         {
-            ToDBI dbi = this.DBI as ToDBI;
+            ToDBIForPs dbi = this.DBI as ToDBIForPs;
             DateTime dt = dbi.ReadLastDitchDataDateTime(this.Name);
             return dt;
         }

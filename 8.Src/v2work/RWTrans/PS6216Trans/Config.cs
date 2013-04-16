@@ -157,24 +157,24 @@ namespace PS6216DataImporter
         } private FromDBI _fromDBI;
         #endregion //FromDBI
 
-        #region ToDBI
+        #region ToDBIForPs
         /// <summary>
         /// 
         /// </summary>
         [XmlIgnore]
-        public ToDBI ToDBI
+        public ToDBIForPs ToDBI
         {
             get
             {
                 if (_toDBI == null)
                 {
 
-                    _toDBI = new ToDBI(ToConnectionString);
+                    _toDBI = new ToDBIForPs(ToConnectionString);
                 }
                 return _toDBI;
             }
-        } private ToDBI _toDBI;
-        #endregion //ToDBI
+        } private ToDBIForPs _toDBI;
+        #endregion //ToDBIForPs
 
         #region TotalHeight
         /// <summary>

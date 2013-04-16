@@ -36,6 +36,10 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Xdgk.CF, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\GlobalAssembly\Xdgk.CF\Xdgk.CF.dll</HintPath>
+    </Reference>
     <Reference Include="Xdgk.Common, Version=0.11.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\GlobalAssembly\Xdgk.Common\Xdgk.Common.dll</HintPath>

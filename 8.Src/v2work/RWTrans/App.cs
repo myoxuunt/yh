@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xdgk.Common;
 using Xdgk.CF;
+using Common;
 
 namespace RWTrans
 {
@@ -247,7 +248,7 @@ namespace RWTrans
         } private FromDBI _fromDBI;
         #endregion //FromDBI
 
-        #region ToDBI
+        #region ToDBIForPs
         /// <summary>
         /// 
         /// </summary>
@@ -266,7 +267,7 @@ namespace RWTrans
                 _toDBI = value;
             }
         } private ToDBI _toDBI;
-        #endregion //ToDBI
+        #endregion //ToDBIForPs
 
         #region MainForm
         /// <summary>
@@ -315,9 +316,10 @@ namespace RWTrans
         {
             get
             {
-                if (_dfsmaps == null)
+                DevieFormaulCollectionMapCollection _dfsmaps = DeviceFormaulManager.DevieFormaulCollectionMapCollection;
+                if (!DeviceFormaulManager.IsInitCQFormaul)
                 {
-                    _dfsmaps = new DevieFormaulCollectionMapCollection();
+                    //_dfsmaps = new DevieFormaulCollectionMapCollection();
 
                     DataTable stationTbl = FromDBI.GetWaterStationDataTable();
                     foreach (DataRow row in stationTbl.Rows)
@@ -331,10 +333,12 @@ namespace RWTrans
                         _dfsmaps[_dfsmaps.Count - 1].Tag = item.FromName;
                     }
 
+                    DeviceFormaulManager.IsInitCQFormaul = true;
                 }
                 return _dfsmaps;
             }
-        } private DevieFormaulCollectionMapCollection _dfsmaps;
+        } 
+        //private DevieFormaulCollectionMapCollection _dfsmaps;
         #endregion //DevieFormaulCollectionMapCollection
     }
 }

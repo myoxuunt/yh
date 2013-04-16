@@ -43,14 +43,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
+    <Compile Include="DataEnum.cs" />
+    <Compile Include="DeviceBase.cs" />
     <Compile Include="FromDBI.cs" />
+    <Compile Include="FromDevice.cs" />
     <Compile Include="Importer.cs" />
-    <Compile Include="ImportItem.cs" />
     <Compile Include="ImportItemCollection.cs" />
     <Compile Include="NameMap.cs" />
     <Compile Include="NameMapCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ToDBI.cs" />
+    <Compile Include="ToDevice.cs" />
+    <Compile Include="TransItem.cs" />
     <Compile Include="TransItemFactory.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -143,10 +143,10 @@ namespace RWTrans
         /// <param name="e"></param>
         void _timer_Tick(object sender, EventArgs e)
         {
-            Logger.Add(strings.TransBegin);
-            Doit();
-            Logger.Add(strings.TransEnd);
-            Logger.AddSeparatLine();
+            //Logger.Add(strings.TransBegin);
+            //Doit();
+            //Logger.Add(strings.TransEnd);
+            //Logger.AddSeparatLine();
         }
         #endregion //_timer_Tick
 

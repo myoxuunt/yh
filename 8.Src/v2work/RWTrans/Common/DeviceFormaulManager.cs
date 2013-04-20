@@ -28,7 +28,7 @@ namespace Common
             {
                 _isInitCQFormaul = value;
             }
-        } static private bool _isInitCQFormaul = false;
+        } static private bool _isInitCQFormaul = true;
         #endregion //IsInitCQFormaul
 
         #region IsInitPSFormaul

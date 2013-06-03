@@ -32,8 +32,8 @@ namespace PS6216DataImporter
         {
             FromDevice fd = new FromDevice(totalHeight);
             fd.DBI = fromDBI;
-            //fd.Name = name;
-            //fd.ID = fromDBI.ReadFromDeviceID(name);
+            fd.Name = name;
+            fd.ID = fromDBI.ReadFromDeviceID(name);
             return fd;
         }
 

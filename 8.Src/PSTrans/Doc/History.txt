@@ -1,2 +1,7 @@
-﻿v1.1.0.0        2013-04-18
+﻿v1.2.0.0        2013-06-03
+	remove from datatable name
+    add from item by name -> id -> datatablename
+       
+v1.1.0.0        2013-04-18
+
 	

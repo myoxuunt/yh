@@ -29,13 +29,13 @@ namespace PS6216DataImporter
 
         private void InitDeviceFormaul()
         {
-            if (!DeviceFormaulManager.IsInitPSFormaul )
+            if (!DeviceFormaulManager.IsInitPSFormaul)
             {
 
                 DevieFormaulCollectionMapCollection _dfsmaps = DeviceFormaulManager.DevieFormaulCollectionMapCollection;
                 foreach (TransItem ti in this.TransItemCollection)
                 {
-                    ToDBI dbi = (ToDBI )ti.ToDevice.DBI ;
+                    ToDBI dbi = (ToDBI)ti.ToDevice.DBI;
                     DataTable fromulaTbl = dbi.GetFormulaDataTable(ti.ToDevice.ID);
                     _dfsmaps.AddDevice(ti.ToDevice.ID, fromulaTbl.Rows);
 
@@ -114,7 +114,7 @@ namespace PS6216DataImporter
                 config = new Config();
                 config.FromConnectionString = "f";
                 config.ToConnectionString = "t";
-                config.ImportInterval = TimeSpan .Parse ("00:00:10");
+                config.ImportInterval = TimeSpan.Parse("00:00:10");
 
                 NameMap nm = new NameMap();
                 nm.FromName = "FN";
@@ -170,7 +170,9 @@ namespace PS6216DataImporter
         {
             foreach (TransItem item in this.TransItemCollection)
             {
-                _logger.Add("开始传输-ps");
+                string beginMsg = string.Format("开始传输 - {0} -> {1}", item.FromDevice.Name, item.ToDevice.Name);
+                _logger.Add(beginMsg);
+
                 DateTime lastDT = item.ToDevice.ReadLastDataDateTime();
                 _logger.Add(string.Format("'{0}' 最后记录时间 '{1}'", item.ToDevice.Name, lastDT));
 
@@ -181,7 +183,7 @@ namespace PS6216DataImporter
                 string msg = string.Format("传输 '{0}' 记录 '{1}' 条", item.ToDevice.Name, tbl.Rows.Count);
                 _logger.Add(msg);
 
-                _logger.Add ( "结束传输-ps" );
+                _logger.Add("结束传输");
                 _logger.AddSeparatLine();
             }
         }
@@ -199,7 +201,7 @@ namespace PS6216DataImporter
                     // create
                     //
                     _transItemCollection = new TransItemCollection();
-                    foreach ( NameMap nm in Config.NameMapCollection )
+                    foreach (NameMap nm in Config.NameMapCollection)
                     {
                         TransItem item = TransItemFactory.Create(nm, this.Config.FromDBI, this.Config.ToDBI);
                         _transItemCollection.Add(item);

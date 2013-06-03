@@ -15,30 +15,15 @@ namespace PS6216DataImporter
         private string _connstring;
 
         
-        #region TableNameOfFromDB
-        /// <summary>
-        /// 平升历史记录表名称
-        /// </summary>
-        public string TableNameOfFromDB
-        {
-            get { return _tableNameOfFromDB; }
-            set { _tableNameOfFromDB = value; }
-        } private string _tableNameOfFromDB;
-        #endregion //TableNameOfFromDB
+
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="connstring"></param>
-        public FromDBI(string connstring, string tableNameOfFromDB)
+        public FromDBI(string connstring)
         {
             this._connstring = connstring;
-
-            if (string.IsNullOrEmpty(tableNameOfFromDB))
-            {
-                throw new ArgumentException("tablenameOfFromDB cannot is null or empty");
-            }
-            this._tableNameOfFromDB = tableNameOfFromDB;
         }
 
         /// <summary>
@@ -46,11 +31,11 @@ namespace PS6216DataImporter
         /// </summary>
         /// <param deviceType="fromDateTime"></param>
         /// <returns></returns>
-        public DataTable ReadNewDataTable(DateTime fromDateTime)
+        public DataTable ReadNewDataTable(DateTime fromDateTime, string tableNameOfFromDB)
         {
             string s = string.Format(
                 "SELECT * FROM [{0}] WHERE (记录时间 > #{1}#) order by 记录时间",
-                this.TableNameOfFromDB,
+                tableNameOfFromDB,
                 fromDateTime
                 );
             return ExecuteDataTable(s);
@@ -68,6 +53,41 @@ namespace PS6216DataImporter
             con.Dispose();
             return tbl;
             
+        }
+
+        private object ExecuteScalar(string sql)
+        {
+            OleDbConnection con = new OleDbConnection(this._connstring);
+            con.Open();
+            OleDbCommand cmd = new OleDbCommand(sql, con);
+            object r =  cmd.ExecuteScalar();
+            cmd.Dispose();
+            con.Close();
+            con.Dispose();
+            return r;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        internal int ReadFromDeviceID(string name)
+        {
+            string sql = string.Format(
+                "SELECT 设备标识号 FROM t_设备 where [设备名称]='{0}'",
+                name);
+            object r = ExecuteScalar(sql);
+            if (r == null || r == DBNull.Value)
+            {
+                throw new ArgumentException(
+                    string.Format("not find device by name: '{0}'", name)
+                    );
+            }
+            else
+            {
+                return Convert.ToInt32(r);
+            }
         }
     }
 }

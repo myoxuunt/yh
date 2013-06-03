@@ -12,7 +12,6 @@ namespace PS6216DataImporter
     /// </summary>
     public class Config : Xdgk.Common.SelfSerializer 
     {
-        static private string DefaultTableNameOfFromDB = "t_设备92记录表";
         #region ImportInterval
         /// <summary>
         /// 
@@ -121,24 +120,6 @@ namespace PS6216DataImporter
         } private NameMapCollection _nameMapCollection;
         #endregion //NameMapCollection
 
-        #region TableNameOfFromDB
-        /// <summary>
-        /// 平升历史记录表名称
-        /// </summary>
-        public string TableNameOfFromDB
-        {
-            get
-            {
-                if (string.IsNullOrEmpty(_tableNameOfFromDB))
-                {
-                    _tableNameOfFromDB = DefaultTableNameOfFromDB;
-                }
-                return _tableNameOfFromDB;
-            }
-            set { _tableNameOfFromDB = value; }
-        } private string _tableNameOfFromDB;
-        #endregion //TableNameOfFromDB
-
         #region FromDBI
         /// <summary>
         /// 
@@ -150,7 +131,7 @@ namespace PS6216DataImporter
             {
                 if (_fromDBI == null)
                 {
-                    _fromDBI = new FromDBI(this.FromConnectionString, this.TableNameOfFromDB);
+                    _fromDBI = new FromDBI(this.FromConnectionString);
                 }
                 return _fromDBI;
             }

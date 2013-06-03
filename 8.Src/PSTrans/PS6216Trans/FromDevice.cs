@@ -22,6 +22,16 @@ namespace PS6216DataImporter
             _totalHeight = totalHeight;           
         }
 
+        #region TableNameOfFromDB
+        /// <summary>
+        /// 平升历史记录表名称
+        /// </summary>
+        public string GetTableNameOfFromDB()
+        {
+            return string.Format("t_设备{0}记录表", this.ID);
+        }
+        #endregion //TableNameOfFromDB
+
         /// <summary>
         /// 
         /// </summary>
@@ -29,7 +39,7 @@ namespace PS6216DataImporter
         /// <returns></returns>
         public DataTable ReadDataTable(DateTime fromDateTime)
         {
-            DataTable tbl = ((FromDBI)DBI).ReadNewDataTable(fromDateTime);
+            DataTable tbl = ((FromDBI)DBI).ReadNewDataTable(fromDateTime, this.GetTableNameOfFromDB());
             tbl.Columns.Add("wl", typeof(float));
             foreach (DataRow row in tbl.Rows)
             {
@@ -39,6 +49,8 @@ namespace PS6216DataImporter
             }
             return tbl;
         }
+
+        
 
         new private string Name
         {

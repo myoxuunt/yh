@@ -3,7 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
-using System.Data ;
+using System.Data;
 using System.Data.SqlClient;
 
 
@@ -11,7 +11,7 @@ namespace PS6216DataImporter
 {
     public class DeviceBase
     {
-#region Name
+        #region Name
         /// <summary>
         /// 
         /// </summary>
@@ -30,9 +30,9 @@ namespace PS6216DataImporter
                 _name = value;
             }
         } private string _name;
-#endregion //Name
+        #endregion //Name
 
-#region ID
+        #region ID
         /// <summary>
         /// 
         /// </summary>
@@ -47,9 +47,9 @@ namespace PS6216DataImporter
                 _iD = value;
             }
         } private int _iD;
-#endregion //ID
+        #endregion //ID
 
-#region DBI
+        #region DBI
         /// <summary>
         /// 
         /// </summary>
@@ -64,10 +64,10 @@ namespace PS6216DataImporter
                 _dBI = value;
             }
         } private object _dBI;
-#endregion //DBI
+        #endregion //DBI
 
 
-#region Elvation
+        #region Elvation
         /// <summary>
         /// 基本高程, 单位M
         /// </summary>
@@ -82,7 +82,7 @@ namespace PS6216DataImporter
                 _elvation = value;
             }
         } private float _elvation;
-#endregion //Elvation
+        #endregion //Elvation
 
     }
 

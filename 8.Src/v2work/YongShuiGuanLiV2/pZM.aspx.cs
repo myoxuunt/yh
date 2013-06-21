@@ -43,6 +43,22 @@ namespace YongShuiGuanLiV2
             //    //this.UCCompareAmount1.BindStationCheckBoxList(new string[] { "XD221", "xd221modbus" });
             //}
         }
+        
+        #region GetSelectedChannelName
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        private string GetSelectedChannelName()
+        {
+            string channelNames = string.Empty;
+            foreach( ChannelClass c in this.UCCompareAmount1.SelectedChannelCollection)
+            {
+                channelNames += c.ChannelName + " ";
+            }
+            return channelNames;
+        }
+        #endregion //GetSelectedChannelName
 
         /// <summary>
         /// 
@@ -57,6 +73,21 @@ namespace YongShuiGuanLiV2
                 DateTime begin = this.UCCompareAmount1.Begin;
                 DateTime end = this.UCCompareAmount1.End ;
                 DataTable tbl = stations.GetSluiceDataTable ( begin,end);
+
+                //
+                //
+                string title = string.Format("{0} ~ {1} {2}闸位曲线", begin, end, this.GetSelectedChannelName());
+                string yTitle = "闸位(cm)";
+
+                this.UCAMChart1.SetLineChartInfo(tbl,
+                    "StationName", 
+                    "DT", 
+                    "Height", 
+                    title, 
+                    yTitle);
+
+                //
+                //
                 H.DataSource = tbl;
                 H.Bind();
             }

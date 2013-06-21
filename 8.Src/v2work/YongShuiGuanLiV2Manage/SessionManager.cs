@@ -45,7 +45,7 @@ namespace YongShuiGuanLiV2Manage
         /// </summary>
         public void Clear()
         {
-            this.ADEState = ADEState.Add;
+            this.ADEState = ADEStatus.Add;
             this.ChannelRemark = string.Empty;
             this.ChannelName = string.Empty;
             this.ChannelID = 0;
@@ -80,11 +80,11 @@ namespace YongShuiGuanLiV2Manage
         /// <summary>
         /// 
         /// </summary>
-        public ADEState ADEState
+        public ADEStatus ADEState
         {
             get { return _aDEState; }
             set { _aDEState = value; }
-        } private ADEState _aDEState;
+        } private ADEStatus _aDEState;
         #endregion //ADEState
 
         #region ChannelID
@@ -225,7 +225,7 @@ namespace YongShuiGuanLiV2Manage
         /// <returns></returns>
         private bool IsAdd()
         {
-            return this.ADEState == ADEState.Add;
+            return this.ADEState == ADEStatus.Add;
         }
 
         /// <summary>

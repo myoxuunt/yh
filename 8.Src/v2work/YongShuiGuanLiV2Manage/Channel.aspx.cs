@@ -66,7 +66,7 @@ namespace YongShuiGuanLiV2Manage
         /// <returns></returns>
         private bool IsEdit()
         {
-            return SessionManager.ChannelSession.ADEState == Xdgk.Common.ADEState.Edit;
+            return SessionManager.ChannelSession.ADEState == Xdgk.Common.ADEStatus.Edit;
         }
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace YongShuiGuanLiV2Manage
         /// <returns></returns>
         private bool IsAdd()
         {
-            return SessionManager.ChannelSession.ADEState == Xdgk.Common.ADEState.Add;
+            return SessionManager.ChannelSession.ADEState == Xdgk.Common.ADEStatus.Add;
         }
 
 

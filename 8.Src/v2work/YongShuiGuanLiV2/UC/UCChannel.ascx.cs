@@ -101,7 +101,7 @@ namespace YongShuiGuanLiV2
             //{
             //    return false;
             //}
-            return SessionManager.ChannelSession.ADEState == Xdgk.Common.ADEState.Edit;
+            return SessionManager.ChannelSession.ADEState == Xdgk.Common.ADEStatus.Edit;
         }
 
         /// <summary>
@@ -110,7 +110,7 @@ namespace YongShuiGuanLiV2
         /// <returns></returns>
         private bool IsAdd()
         {
-            return SessionManager.ChannelSession.ADEState == Xdgk.Common.ADEState.Add;
+            return SessionManager.ChannelSession.ADEState == Xdgk.Common.ADEStatus.Add;
         }
 
         /// <summary>

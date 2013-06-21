@@ -62,7 +62,7 @@ namespace YongShuiGuanLiV2Manage
         {
             SessionManager.ChannelSession.Clear();
 
-            SessionManager.ChannelSession.ADEState = Xdgk.Common.ADEState.Add;
+            SessionManager.ChannelSession.ADEState = Xdgk.Common.ADEStatus.Add;
 
             string url = "channel.aspx";
             Response.Redirect(url);
@@ -79,7 +79,7 @@ namespace YongShuiGuanLiV2Manage
             object value = this.GridView1.DataKeys[index].Value;
             int id = Convert.ToInt32(value);
 
-            SessionManager.ChannelSession.ADEState = Xdgk.Common.ADEState.Edit;
+            SessionManager.ChannelSession.ADEState = Xdgk.Common.ADEStatus.Edit;
             SessionManager.ChannelSession.SetChannalInfo(id);
             //SessionManager.ChannelSession.ChannelName = this.GridView1.Rows[index].Cells[
 

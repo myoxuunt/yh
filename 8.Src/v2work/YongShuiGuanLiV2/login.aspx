@@ -77,8 +77,8 @@
         <td class="style2"></td></tr>
         
         <tr class="style5"><td></td>
-        <td align="center" style="font-size:12px">唐山现代工程技术有限公司版权所有 2010-2020<br />
-            版本：v1.0</td>
+        <td align="center" style="font-size:12px">唐山现代工程技术有限公司版权所有 2010-2013<br />
+            版本：v1.1</td>
         <td></td></tr>
         </table>
         </LayoutTemplate>
